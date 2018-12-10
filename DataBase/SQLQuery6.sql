@@ -1,0 +1,8 @@
+INSERT INTO Features(Name)
+VALUES('TV Room')
+INSERT INTO Features(Name)
+VALUES('Mess')
+INSERT INTO Features(Name)
+VALUES('Attach Bath')
+INSERT INTO Features(Name)
+VALUES('WIFI')

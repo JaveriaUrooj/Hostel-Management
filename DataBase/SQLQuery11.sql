@@ -1,0 +1,11 @@
+INSERT INTO Campus(Name)
+VALUES('Main Campus')
+INSERT INTO Campus(Name)
+VALUES('Faisalabad Campus')
+INSERT INTO Campus(Name)
+VALUES('Narrowal Campus')
+INSERT INTO Campus(Name)
+VALUES('KSK Campus')
+INSERT INTO Campus(Name)
+VALUES('Rachna Campus')
+
