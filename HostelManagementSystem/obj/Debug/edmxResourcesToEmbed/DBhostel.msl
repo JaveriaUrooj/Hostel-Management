@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="HostelSystemModelStoreContainer" CdmEntityContainer="HostelSystemEntities">
+    <EntitySetMapping Name="Alotments">
+      <EntityTypeMapping TypeName="HostelSystemModel.Alotment">
+        <MappingFragment StoreEntitySet="Alotment">
+          <ScalarProperty Name="AlottmentID" ColumnName="AlottmentID" />
+          <ScalarProperty Name="stuID" ColumnName="stuID" />
+          <ScalarProperty Name="roomID" ColumnName="roomID" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="DateOfAllotment" ColumnName="DateOfAllotment" />
+          <ScalarProperty Name="DateOfClearance" ColumnName="DateOfClearance" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BloodGroups">
+      <EntityTypeMapping TypeName="HostelSystemModel.BloodGroup">
+        <MappingFragment StoreEntitySet="BloodGroup">
+          <ScalarProperty Name="BloodGroupID" ColumnName="BloodGroupID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Campus">
+      <EntityTypeMapping TypeName="HostelSystemModel.Campu">
+        <MappingFragment StoreEntitySet="Campus">
+          <ScalarProperty Name="CampusID" ColumnName="CampusID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cities">
+      <EntityTypeMapping TypeName="HostelSystemModel.City">
+        <MappingFragment StoreEntitySet="City">
+          <ScalarProperty Name="CityID" ColumnName="CityID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Countryid" ColumnName="Countryid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Countries">
+      <EntityTypeMapping TypeName="HostelSystemModel.Country">
+        <MappingFragment StoreEntitySet="Country">
+          <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Departments">
+      <EntityTypeMapping TypeName="HostelSystemModel.Department">
+        <MappingFragment StoreEntitySet="Departments">
+          <ScalarProperty Name="DepartmentsID" ColumnName="DepartmentsID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Cid" ColumnName="Cid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EMPLOYEEs">
+      <EntityTypeMapping TypeName="HostelSystemModel.EMPLOYEE">
+        <MappingFragment StoreEntitySet="EMPLOYEE">
+          <ScalarProperty Name="CNIC" ColumnName="CNIC" />
+          <ScalarProperty Name="loginID" ColumnName="loginID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="DateOfBirth" ColumnName="DateOfBirth" />
+          <ScalarProperty Name="cityID" ColumnName="cityID" />
+          <ScalarProperty Name="contactNo" ColumnName="contactNo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Features">
+      <EntityTypeMapping TypeName="HostelSystemModel.Feature">
+        <MappingFragment StoreEntitySet="Features">
+          <ScalarProperty Name="FeaturesID" ColumnName="FeaturesID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Hostels">
+      <EntityTypeMapping TypeName="HostelSystemModel.Hostel">
+        <MappingFragment StoreEntitySet="Hostel">
+          <ScalarProperty Name="HostelID" ColumnName="HostelID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HostelFeatures">
+      <EntityTypeMapping TypeName="HostelSystemModel.HostelFeature">
+        <MappingFragment StoreEntitySet="HostelFeatures">
+          <ScalarProperty Name="HFID" ColumnName="HFID" />
+          <ScalarProperty Name="Hid" ColumnName="Hid" />
+          <ScalarProperty Name="Fid" ColumnName="Fid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HostelResidents">
+      <EntityTypeMapping TypeName="HostelSystemModel.HostelResident">
+        <MappingFragment StoreEntitySet="HostelResident">
+          <ScalarProperty Name="HRID" ColumnName="HRID" />
+          <ScalarProperty Name="Hid" ColumnName="Hid" />
+          <ScalarProperty Name="Rid" ColumnName="Rid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Logins">
+      <EntityTypeMapping TypeName="HostelSystemModel.Login">
+        <MappingFragment StoreEntitySet="Login">
+          <ScalarProperty Name="loginID" ColumnName="loginID" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Residents">
+      <EntityTypeMapping TypeName="HostelSystemModel.Resident">
+        <MappingFragment StoreEntitySet="Residents">
+          <ScalarProperty Name="ResidentsID" ColumnName="ResidentsID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Rooms">
+      <EntityTypeMapping TypeName="HostelSystemModel.Room">
+        <MappingFragment StoreEntitySet="Room">
+          <ScalarProperty Name="TotalRooms" ColumnName="TotalRooms" />
+          <ScalarProperty Name="RoomID" ColumnName="RoomID" />
+          <ScalarProperty Name="RoomTypeid" ColumnName="RoomTypeid" />
+          <ScalarProperty Name="Hostelid" ColumnName="Hostelid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RoomTypes">
+      <EntityTypeMapping TypeName="HostelSystemModel.RoomType">
+        <MappingFragment StoreEntitySet="RoomType">
+          <ScalarProperty Name="RoomTypeID" ColumnName="RoomTypeID" />
+          <ScalarProperty Name="RoomType1" ColumnName="RoomType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Students">
+      <EntityTypeMapping TypeName="HostelSystemModel.Student">
+        <MappingFragment StoreEntitySet="Student">
+          <ScalarProperty Name="CNIC" ColumnName="CNIC" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="DateOFBirth" ColumnName="DateOFBirth" />
+          <ScalarProperty Name="ContactNo" ColumnName="ContactNo" />
+          <ScalarProperty Name="BGid" ColumnName="BGid" />
+          <ScalarProperty Name="Cityid" ColumnName="Cityid" />
+          <ScalarProperty Name="CGPA" ColumnName="CGPA" />
+          <ScalarProperty Name="Session" ColumnName="Session" />
+          <ScalarProperty Name="Deptid" ColumnName="Deptid" />
+          <ScalarProperty Name="loginID" ColumnName="loginID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="C__MigrationHistory">
+      <EntityTypeMapping TypeName="HostelSystemModel.C__MigrationHistory">
+        <MappingFragment StoreEntitySet="__MigrationHistory">
+          <ScalarProperty Name="ProductVersion" ColumnName="ProductVersion" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="ContextKey" ColumnName="ContextKey" />
+          <ScalarProperty Name="MigrationId" ColumnName="MigrationId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetRoles">
+      <EntityTypeMapping TypeName="HostelSystemModel.AspNetRole">
+        <MappingFragment StoreEntitySet="AspNetRoles">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetUserClaims">
+      <EntityTypeMapping TypeName="HostelSystemModel.AspNetUserClaim">
+        <MappingFragment StoreEntitySet="AspNetUserClaims">
+          <ScalarProperty Name="ClaimValue" ColumnName="ClaimValue" />
+          <ScalarProperty Name="ClaimType" ColumnName="ClaimType" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetUserLogins">
+      <EntityTypeMapping TypeName="HostelSystemModel.AspNetUserLogin">
+        <MappingFragment StoreEntitySet="AspNetUserLogins">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="ProviderKey" ColumnName="ProviderKey" />
+          <ScalarProperty Name="LoginProvider" ColumnName="LoginProvider" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetUsers">
+      <EntityTypeMapping TypeName="HostelSystemModel.AspNetUser">
+        <MappingFragment StoreEntitySet="AspNetUsers">
+          <ScalarProperty Name="DepartmentsID" ColumnName="DepartmentsID" />
+          <ScalarProperty Name="BloodGroupID" ColumnName="BloodGroupID" />
+          <ScalarProperty Name="CityID" ColumnName="CityID" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="Registeration_No" ColumnName="Registeration_No" />
+          <ScalarProperty Name="CGPA" ColumnName="CGPA" />
+          <ScalarProperty Name="contact_no" ColumnName="contact_no" />
+          <ScalarProperty Name="CNIC" ColumnName="CNIC" />
+          <ScalarProperty Name="Date_Of_Birth" ColumnName="Date_Of_Birth" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="AccessFailedCount" ColumnName="AccessFailedCount" />
+          <ScalarProperty Name="LockoutEnabled" ColumnName="LockoutEnabled" />
+          <ScalarProperty Name="LockoutEndDateUtc" ColumnName="LockoutEndDateUtc" />
+          <ScalarProperty Name="TwoFactorEnabled" ColumnName="TwoFactorEnabled" />
+          <ScalarProperty Name="PhoneNumberConfirmed" ColumnName="PhoneNumberConfirmed" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="SecurityStamp" ColumnName="SecurityStamp" />
+          <ScalarProperty Name="PasswordHash" ColumnName="PasswordHash" />
+          <ScalarProperty Name="EmailConfirmed" ColumnName="EmailConfirmed" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="AspNetUserRoles" TypeName="HostelSystemModel.AspNetUserRoles" StoreEntitySet="AspNetUserRoles">
+      <EndProperty Name="AspNetUser">
+        <ScalarProperty Name="Id" ColumnName="UserId" />
+      </EndProperty>
+      <EndProperty Name="AspNetRole">
+        <ScalarProperty Name="Id" ColumnName="RoleId" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

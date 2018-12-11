@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="~/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="~/css/swiper.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="~/style.css">
+    <script src="~/js/custom.js"></script>
+
+</head>
+<body>
+ 
+  
+
+        <div>
+        @RenderBody()
+        </div>
+
+                                    <footer class="site-footer">
+                                        <div class="footer-widgets">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-12 col-md-6 col-lg-4">
+                                                        <div class="foot-about">
+                                                            <h2></h2>
+
+
+
+
+                                                        </div><!-- .foot-about -->
+                                                    </div><!-- .col -->
+
+                                                    <div class="col-12 col-md-6 col-lg-4 mt-5 mt-md-0">
+                                                        <div class="foot-contact">
+                                                            <h2>Contact</h2>
+
+                                                            <ul class="p-0 m-0">
+                                                                <li><span>Address:</span> UET, Lahore</li>
+                                                                <li><span>Phone:</span>0333 6227452</li>
+                                                                <li><span>Email:</span>jurooj678@gmail.com </li>
+                                                                <li><span></span>ishfaqiqra5@gmail.com </li>
+                                                                <li><span></span>abid.aqsa26@gmail.com </li>
+                                                                <li><span></span>maryam.uet300300@gmail.com </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div><!-- .col -->
+
+                                                    <div class="col-12 col-md-6 col-lg-4 mt-5 mt-md-0">
+                                                        <div class="foot-contact">
+                                                            <h2>Usefull Links</h2>
+
+                                                            <ul class="p-0 m-0">
+                                                                <li><a href="http://localhost:49330/Home/Index">Home</a></li>
+                                                                <li><a href="about.html">About us</a></li>
+                                                                <li><a href="contact.html">Contact</a></li>
+
+                                                            </ul>
+                                                        </div><!-- .foot-links -->
+                                                    </div><!-- .col -->
+                                                </div><!-- .row -->
+                                            </div><!-- .container -->
+                                        </div><!-- .footer-widgets -->
+                                    </footer><!-- .site-footer -->
+                                    <footer>
+                                        <div class="container">
+                                            <div class="footer-content d-flex justify-content-between align-items-center flex-wrap">
+                                                <div class="logo">
+
+                                                </div>
+                                                <div class="copy-right-text" style="color: #18a3eb;">Copyright &copy; 2018  |  All rights reserved.</div>
+                                                <div class="footer-social">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </footer>
+
+                                    <script type='text/javascript' src='~/js/jquery.js'></script>
+                                    <script type='text/javascript' src='~/js/jquery.collapsible.min.js'></script>
+                                    <script type='text/javascript' src='~/js/swiper.min.js'></script>
+                                    <script type='text/javascript' src='~/js/jquery.countdown.min.js'></script>
+                                    <script type='text/javascript' src='~/js/circle-progress.min.js'></script>
+                                    <script type='text/javascript' src='~/js/jquery.countTo.min.js'></script>
+                                    <script type='text/javascript' src='~/js/jquery.barfiller.js'></script>
+                                    <script type='text/javascript' src='~/js/custom.js'></script>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

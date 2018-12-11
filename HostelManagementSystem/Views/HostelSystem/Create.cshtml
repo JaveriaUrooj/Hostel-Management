@@ -1,0 +1,272 @@
+﻿@model HostelManagementSystem.Models.HoetelViewModel
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<header class="site-header" style="background-image: url('~/images/hero2.png'); background-color: #f8f9fa">
+    <div class="nav-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-flex flex-wrap justify-content-between align-items-center">
+                    <div class="site-branding d-flex align-items-center">
+                        <a class="d-block" href="index.html" rel="home"></a>
+                        <h1>Add Hostel</h1>
+                    </div><!-- .site-branding -->
+
+                    <nav class="site-navigation d-flex justify-content-end align-items-center">
+                        <ul class="d-flex flex-column flex-lg-row justify-content-lg-end align-items-center">
+                            <li class="current-menu-item"><a href="/Home/Index">Home</a></li>
+                            <li><a href="/Account/Login">Login</a></li>
+                            <li><a href="/Home/Index">Logout</a></li>
+
+
+
+                        </ul>
+                    </nav><!-- .site-navigation -->
+
+                    <div class="hamburger-menu d-lg-none">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div><!-- .hamburger-menu -->
+                </div><!-- .col -->
+            </div><!-- .row -->
+        </div><!-- .container -->
+    </div><!-- .nav-bar -->
+
+    <div class="swiper-container hero-slider" style="height:100px">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide hero-content-wrap" ;>
+                <div class="hero-content-overlay position-absolute w-100 h-100">
+                    <div class="container h-100">
+                        <div class="row h-100">
+                            <div class="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-start">
+                                <header class="entry-header">
+                                    <h1>Add Hostel</h1>
+                                </header><!-- .entry-header -->
+                                <!-- .entry-content -->
+                                <!-- .entry-footer -->
+                            </div><!-- .col -->
+                        </div><!-- .row -->
+                    </div><!-- .container -->
+                </div><!-- .hero-content-overlay -->
+            </div><!-- .hero-content-wrap -->
+            <!-- .swiper-wrapper -->ss
+            <!-- .pagination-wrap -->
+        </div><!-- .hero-slider -->
+    </div>
+</header><!-- .site-header -->
+
+<div class="inputBTN">
+    <a href="/Home/Index"><input class="button gradient-bg" type="submit" value="Find a Hostel"></a>
+    <a href="/HostelSystem/Create"><input class="button gradient-bg" type="submit" value="Add a Hostel"></a>
+    <a href="/HostelSystem/calculate"><input class="button gradient-bg" type="submit" value="Allot a Hostel"></a>
+</div>
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+
+    
+
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="container">
+            <div>
+                <div>
+                    <div>
+                        <h2 style="text-align: center; padding-top: 10px; margin-bottom: 30px; font-weight: bold;color: #18a3eb;">Hostel Details</h2>
+                        <div>
+                            <div>
+                                <div style="margin-bottom: 50px;">
+                                    <header class="entry-header d-flex flex-wrap align-items-center">
+
+
+                                        <h3 style="font-weight: bold; padding-left:18px;">Hostel Name</h3>
+                                    </header>
+
+                                    <div class="col-md-10">
+                                        @Html.TextBoxFor(model => model.Name, new { htmlAttributes = new { @class = "form-control", placeholder = "Hostel Name" } })
+                                        @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+                                    </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <div style="margin-bottom: 50px; ">
+                                            <header class="entry-header d-flex flex-wrap align-items-center">
+
+
+                                                <h3 style="font-weight: bold;">Residents</h3>
+                                            </header>
+
+                                            <div class="switch-wrap d-flex justify-content-between">
+                                                <p>01. Boys</p>
+
+                                                <input name ="residentboy" type="checkbox" id="residentboy" value="boy">
+
+                                            </div>
+
+                                            <div class="switch-wrap d-flex justify-content-between">
+                                                <p>02. Girls</p>
+
+                                                <input name="residentgirl" type="checkbox" id="residentgirl" value="girl">
+
+                                            </div>
+
+                                            <div class="switch-wrap d-flex justify-content-between">
+                                                <p>03. Faculty</p>
+
+
+                                                <input name="residentfaculity" type="checkbox" id="residentfaculity" value="faculity">
+
+                                            </div>
+                                            <div class="switch-wrap d-flex justify-content-between">
+                                                <p>04. Student</p>
+
+
+                                                <input name="residentstudent" type="checkbox" id="residentstudent" value="student">
+                                            </div>
+                                            <div class="switch-wrap d-flex justify-content-between">
+                                                <p>05. Guests</p>
+
+
+                                                <input name="residentguests" type="checkbox" id="residentguests" value="guests">
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <div style="margin-bottom: 50px;">
+                                            <header class="entry-header d-flex flex-wrap align-items-center">
+
+
+                                                <h3 style="font-weight: bold;">Features</h3>
+                                            </header>
+
+                                            <div class="switch-wrap d-flex justify-content-between">
+                                                <p>01. TV Room</p>
+
+                                                <input name="featureTvhall" type="checkbox" id="featureTvhall" value="true">
+
+                                            </div>
+                                            <div class="switch-wrap d-flex justify-content-between">
+                                                <p>02. Mess</p>
+
+                                                <input name="featureMess" type="checkbox" id="featureMess" value="true">
+
+                                            </div>
+                                            <div class="switch-wrap d-flex justify-content-between">
+                                                <p>03. Attach Bath</p>
+                                                <input name="featureAttachBath" type="checkbox" id="featureAttachBath" value="true">
+                                            </div>
+                                            <div class="switch-wrap d-flex justify-content-between">
+                                                <p>04. WIFI</p>
+                                                <input name="featureWifi" type="checkbox" id="featureWifi" value="true">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                        </div>
+                    </div>
+
+                 </div>
+                    </div>
+            </div>
+
+            <div style="margin:100px;">
+                <div class="single-element-widget mt-30">
+                    <h3 class="mb-30" style="font-weight: bold;">Room Details</h3>
+                </div>
+                <table class="table table-bordered">
+                    <thead>
+                    <th>Room Type</th>
+                    <th>Total Room</th>
+
+                    <tbody>
+                        <tr>
+                            <td>Cubical</td>
+                            <td>
+                                <div>
+                                    @Html.TextBoxFor(model => model.totalcubical, new { htmlAttributes = new { @class = "form-control" } })
+                                    @Html.ValidationMessageFor(model => model.totalcubical, "", new { @class = "text-danger" })
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Bi-seater</td>
+                            <td>
+                                <div>
+                                    @Html.TextBoxFor(model => model.totalBiseater, new { htmlAttributes = new { @class = "form-control" } })
+                                    @Html.ValidationMessageFor(model => model.totalBiseater, "", new { @class = "text-danger" })
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Tri-seater</td>
+                            <td>
+                                <div>
+                                    @Html.TextBoxFor(model => model.totalTriseater, new { htmlAttributes = new { @class = "form-control" } })
+                                    @Html.ValidationMessageFor(model => model.totalTriseater, "", new { @class = "text-danger" })
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Four-Seater</td>
+                            <td>
+                                <div>
+                                    @Html.TextBoxFor(model => model.totalFourseater, new { htmlAttributes = new { @class = "form-control" } })
+                                    @Html.ValidationMessageFor(model => model.totalFourseater, "", new { @class = "text-danger" })
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Five-Seater</td>
+                            <td>
+                                <div>
+                                    @Html.TextBoxFor(model => model.totalFiveseater, new { htmlAttributes = new { @class = "form-control" } })
+                                    @Html.ValidationMessageFor(model => model.totalFiveseater, "", new { @class = "text-danger" })
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Six-Seater</td>
+                            <td>
+                                <div>
+                                    @Html.TextBoxFor(model => model.totalsixseater, new { htmlAttributes = new { @class = "form-control" } })
+                                    @Html.ValidationMessageFor(model => model.totalsixseater, "", new { @class = "text-danger" })
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Multi-Seater</td>
+                            <td>
+                                <div>
+                                    @Html.TextBoxFor(model => model.totalmultiseater, new { htmlAttributes = new { @class = "form-control" } })
+                                    @Html.ValidationMessageFor(model => model.totalmultiseater, "", new { @class = "text-danger" })
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+
+
+            </div>
+            
+         
+
+                        <div class="form-group">
+                            <div class="col-md-offset-2 col-md-10">
+                                <input type="submit" value="Add" class="button gradient-bg" style="margin-left:90px" />
+                            </div>
+                        </div>
+                   
+                         
+        
+                    }
+
+                    <div>
+                        @Html.ActionLink("Back to List", "Index")
+                    </div>

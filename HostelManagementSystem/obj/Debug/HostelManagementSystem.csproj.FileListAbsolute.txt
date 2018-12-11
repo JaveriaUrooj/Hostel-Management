@@ -1,0 +1,412 @@
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\bin\ApplicationInsights.config
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\bin\roslyn\csc.exe
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\bin\roslyn\System.Collections.Immutable.dll
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\bin\roslyn\vbc.exe
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\bin\roslyn\VBCSCompiler.exe
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\bin\roslyn\VBCSCompiler.exe.config
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\bin\HostelManagementSystem.dll.config
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\bin\HostelManagementSystem.dll
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\bin\HostelManagementSystem.pdb
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\bin\Antlr3.Runtime.dll
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\bin\EntityFramework.dll
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\bin\EntityFramework.SqlServer.dll
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.AI.Agent.Intercept.dll
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.AI.DependencyCollector.dll
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.AI.PerfCounterCollector.dll
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.AI.ServerTelemetryChannel.dll
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.AI.Web.dll
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.AI.WindowsServer.dll
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.ApplicationInsights.dll
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.AspNet.Identity.Core.dll
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.AspNet.Identity.Owin.dll
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.dll
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.Host.SystemWeb.dll
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.Security.Cookies.dll
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.Security.dll
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.Security.Facebook.dll
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.Security.Google.dll
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.Security.OAuth.dll
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.Security.Twitter.dll
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Web.Infrastructure.dll
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\bin\Newtonsoft.Json.dll
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\bin\Owin.dll
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\bin\System.Web.Helpers.dll
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\bin\System.Web.Mvc.dll
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\bin\System.Web.Optimization.dll
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\bin\System.Web.Razor.dll
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\bin\System.Web.WebPages.Deployment.dll
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\bin\System.Web.WebPages.dll
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\bin\System.Web.WebPages.Razor.dll
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\bin\WebGrease.dll
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.AI.DependencyCollector.xml
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.AI.Web.xml
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.AI.WindowsServer.xml
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.ApplicationInsights.xml
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\bin\System.Web.Helpers.xml
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\bin\System.Web.Mvc.xml
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\bin\System.Web.Optimization.xml
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\bin\System.Web.Razor.xml
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\bin\System.Web.WebPages.xml
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\bin\System.Web.WebPages.Deployment.xml
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\bin\System.Web.WebPages.Razor.xml
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\bin\Antlr3.Runtime.pdb
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\bin\Newtonsoft.Json.xml
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\bin\EntityFramework.xml
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\bin\EntityFramework.SqlServer.xml
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.AspNet.Identity.Core.xml
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.AspNet.Identity.Owin.xml
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.xml
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.Host.SystemWeb.xml
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.Security.xml
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.Security.Facebook.xml
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.Security.Cookies.xml
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.Security.OAuth.xml
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.Security.Google.xml
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.Security.Twitter.xml
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\obj\Debug\HostelManagementSystem.csprojResolveAssemblyReference.cache
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\obj\Debug\HostelManagementSystem.dll
+c:\users\laptop hub\documents\visual studio 2015\Projects\HostelManagementSystem\HostelManagementSystem\obj\Debug\HostelManagementSystem.pdb
+E:\the se project\HostelManagementSystem\HostelManagementSystem\bin\ApplicationInsights.config
+E:\the se project\HostelManagementSystem\HostelManagementSystem\bin\roslyn\csc.exe
+E:\the se project\HostelManagementSystem\HostelManagementSystem\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\the se project\HostelManagementSystem\HostelManagementSystem\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\the se project\HostelManagementSystem\HostelManagementSystem\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\the se project\HostelManagementSystem\HostelManagementSystem\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\the se project\HostelManagementSystem\HostelManagementSystem\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\the se project\HostelManagementSystem\HostelManagementSystem\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\the se project\HostelManagementSystem\HostelManagementSystem\bin\roslyn\System.Collections.Immutable.dll
+E:\the se project\HostelManagementSystem\HostelManagementSystem\bin\roslyn\System.Reflection.Metadata.dll
+E:\the se project\HostelManagementSystem\HostelManagementSystem\bin\roslyn\vbc.exe
+E:\the se project\HostelManagementSystem\HostelManagementSystem\bin\roslyn\VBCSCompiler.exe
+E:\the se project\HostelManagementSystem\HostelManagementSystem\bin\roslyn\VBCSCompiler.exe.config
+E:\the se project\HostelManagementSystem\HostelManagementSystem\bin\HostelManagementSystem.dll.config
+E:\the se project\HostelManagementSystem\HostelManagementSystem\bin\HostelManagementSystem.dll
+E:\the se project\HostelManagementSystem\HostelManagementSystem\bin\HostelManagementSystem.pdb
+E:\the se project\HostelManagementSystem\HostelManagementSystem\bin\Antlr3.Runtime.dll
+E:\the se project\HostelManagementSystem\HostelManagementSystem\bin\EntityFramework.dll
+E:\the se project\HostelManagementSystem\HostelManagementSystem\bin\EntityFramework.SqlServer.dll
+E:\the se project\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.AI.Agent.Intercept.dll
+E:\the se project\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.AI.DependencyCollector.dll
+E:\the se project\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\the se project\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\the se project\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.AI.Web.dll
+E:\the se project\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.AI.WindowsServer.dll
+E:\the se project\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.ApplicationInsights.dll
+E:\the se project\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.AspNet.Identity.Core.dll
+E:\the se project\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\the se project\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\the se project\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\the se project\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.dll
+E:\the se project\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\the se project\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.Security.Cookies.dll
+E:\the se project\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.Security.dll
+E:\the se project\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.Security.Facebook.dll
+E:\the se project\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.Security.Google.dll
+E:\the se project\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\the se project\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.Security.OAuth.dll
+E:\the se project\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.Security.Twitter.dll
+E:\the se project\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Web.Infrastructure.dll
+E:\the se project\HostelManagementSystem\HostelManagementSystem\bin\Newtonsoft.Json.dll
+E:\the se project\HostelManagementSystem\HostelManagementSystem\bin\Owin.dll
+E:\the se project\HostelManagementSystem\HostelManagementSystem\bin\System.Web.Helpers.dll
+E:\the se project\HostelManagementSystem\HostelManagementSystem\bin\System.Web.Mvc.dll
+E:\the se project\HostelManagementSystem\HostelManagementSystem\bin\System.Web.Optimization.dll
+E:\the se project\HostelManagementSystem\HostelManagementSystem\bin\System.Web.Razor.dll
+E:\the se project\HostelManagementSystem\HostelManagementSystem\bin\System.Web.WebPages.Deployment.dll
+E:\the se project\HostelManagementSystem\HostelManagementSystem\bin\System.Web.WebPages.dll
+E:\the se project\HostelManagementSystem\HostelManagementSystem\bin\System.Web.WebPages.Razor.dll
+E:\the se project\HostelManagementSystem\HostelManagementSystem\bin\WebGrease.dll
+E:\the se project\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.AI.DependencyCollector.xml
+E:\the se project\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\the se project\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.AI.Web.xml
+E:\the se project\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.AI.WindowsServer.xml
+E:\the se project\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.ApplicationInsights.xml
+E:\the se project\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\the se project\HostelManagementSystem\HostelManagementSystem\bin\System.Web.Helpers.xml
+E:\the se project\HostelManagementSystem\HostelManagementSystem\bin\System.Web.Mvc.xml
+E:\the se project\HostelManagementSystem\HostelManagementSystem\bin\System.Web.Optimization.xml
+E:\the se project\HostelManagementSystem\HostelManagementSystem\bin\System.Web.Razor.xml
+E:\the se project\HostelManagementSystem\HostelManagementSystem\bin\System.Web.WebPages.xml
+E:\the se project\HostelManagementSystem\HostelManagementSystem\bin\System.Web.WebPages.Deployment.xml
+E:\the se project\HostelManagementSystem\HostelManagementSystem\bin\System.Web.WebPages.Razor.xml
+E:\the se project\HostelManagementSystem\HostelManagementSystem\bin\Antlr3.Runtime.pdb
+E:\the se project\HostelManagementSystem\HostelManagementSystem\bin\Newtonsoft.Json.xml
+E:\the se project\HostelManagementSystem\HostelManagementSystem\bin\EntityFramework.xml
+E:\the se project\HostelManagementSystem\HostelManagementSystem\bin\EntityFramework.SqlServer.xml
+E:\the se project\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.AspNet.Identity.Core.xml
+E:\the se project\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\the se project\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\the se project\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.xml
+E:\the se project\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\the se project\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.Security.xml
+E:\the se project\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.Security.Facebook.xml
+E:\the se project\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.Security.Cookies.xml
+E:\the se project\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.Security.OAuth.xml
+E:\the se project\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.Security.Google.xml
+E:\the se project\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.Security.Twitter.xml
+E:\the se project\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\the se project\HostelManagementSystem\HostelManagementSystem\obj\Debug\HostelManagementSystem.csprojResolveAssemblyReference.cache
+E:\the se project\HostelManagementSystem\HostelManagementSystem\obj\Debug\HostelManagementSystem.dll
+E:\the se project\HostelManagementSystem\HostelManagementSystem\obj\Debug\HostelManagementSystem.pdb
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\bin\ApplicationInsights.config
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\bin\roslyn\csc.exe
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\bin\roslyn\vbc.exe
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\bin\roslyn\VBCSCompiler.exe
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\bin\HostelManagementSystem.dll.config
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\bin\HostelManagementSystem.dll
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\bin\HostelManagementSystem.pdb
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\bin\Antlr3.Runtime.dll
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\bin\EntityFramework.dll
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\bin\EntityFramework.SqlServer.dll
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.AI.Web.dll
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.dll
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.Security.dll
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\bin\Newtonsoft.Json.dll
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\bin\Owin.dll
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\bin\System.Web.Helpers.dll
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\bin\System.Web.Mvc.dll
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\bin\System.Web.Optimization.dll
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\bin\System.Web.Razor.dll
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\bin\System.Web.WebPages.dll
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\bin\System.Web.WebPages.Razor.dll
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\bin\WebGrease.dll
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.AI.Web.xml
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\bin\System.Web.Helpers.xml
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\bin\System.Web.Mvc.xml
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\bin\System.Web.Optimization.xml
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\bin\System.Web.Razor.xml
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\bin\System.Web.WebPages.xml
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\bin\System.Web.WebPages.Razor.xml
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\bin\Antlr3.Runtime.pdb
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\bin\Newtonsoft.Json.xml
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\bin\EntityFramework.xml
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\bin\EntityFramework.SqlServer.xml
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.xml
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.Security.xml
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\obj\Debug\HostelManagementSystem.csprojAssemblyReference.cache
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\obj\Debug\HostelManagementSystem.csproj.CoreCompileInputs.cache
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\obj\Debug\HostelManagementSystem.csproj.CopyComplete
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\obj\Debug\HostelManagementSystem.dll
+C:\Users\Muhammad Umair\Desktop\aaa\HostelManagementSystem\HostelManagementSystem\obj\Debug\HostelManagementSystem.pdb
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\bin\ApplicationInsights.config
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\bin\roslyn\csc.exe
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\bin\roslyn\vbc.exe
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\bin\roslyn\VBCSCompiler.exe
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\bin\HostelManagementSystem.dll.config
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\bin\HostelManagementSystem.dll
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\bin\HostelManagementSystem.pdb
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\bin\Antlr3.Runtime.dll
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\bin\EntityFramework.dll
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\bin\EntityFramework.SqlServer.dll
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.AI.Web.dll
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.dll
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.Security.dll
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\bin\Newtonsoft.Json.dll
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\bin\Owin.dll
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\bin\System.Web.Helpers.dll
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\bin\System.Web.Mvc.dll
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\bin\System.Web.Optimization.dll
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\bin\System.Web.Razor.dll
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\bin\System.Web.WebPages.dll
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\bin\System.Web.WebPages.Razor.dll
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\bin\WebGrease.dll
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.AI.Web.xml
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\bin\System.Web.Helpers.xml
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\bin\System.Web.Mvc.xml
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\bin\System.Web.Optimization.xml
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\bin\System.Web.Razor.xml
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\bin\System.Web.WebPages.xml
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\bin\System.Web.WebPages.Razor.xml
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\bin\Antlr3.Runtime.pdb
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\bin\Newtonsoft.Json.xml
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\bin\EntityFramework.xml
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\bin\EntityFramework.SqlServer.xml
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.xml
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.Security.xml
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\obj\Debug\HostelManagementSystem.csprojResolveAssemblyReference.cache
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\obj\Debug\HostelManagementSystem.dll
+C:\Users\Abdullah Tariq\Desktop\mail\aaa\HostelManagementSystem\HostelManagementSystem\obj\Debug\HostelManagementSystem.pdb
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\bin\ApplicationInsights.config
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\bin\roslyn\csc.exe
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\bin\roslyn\vbc.exe
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\bin\roslyn\VBCSCompiler.exe
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\bin\HostelManagementSystem.dll.config
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\bin\HostelManagementSystem.dll
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\bin\HostelManagementSystem.pdb
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\bin\Antlr3.Runtime.dll
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\bin\EntityFramework.dll
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\bin\EntityFramework.SqlServer.dll
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.AI.Web.dll
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.dll
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.Security.dll
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\bin\Newtonsoft.Json.dll
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\bin\Owin.dll
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\bin\System.Web.Helpers.dll
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\bin\System.Web.Mvc.dll
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\bin\System.Web.Optimization.dll
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\bin\System.Web.Razor.dll
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\bin\System.Web.WebPages.dll
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\bin\System.Web.WebPages.Razor.dll
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\bin\WebGrease.dll
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.AI.Web.xml
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\bin\System.Web.Helpers.xml
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\bin\System.Web.Mvc.xml
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\bin\System.Web.Optimization.xml
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\bin\System.Web.Razor.xml
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\bin\System.Web.WebPages.xml
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\bin\System.Web.WebPages.Razor.xml
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\bin\Antlr3.Runtime.pdb
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\bin\Newtonsoft.Json.xml
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\bin\EntityFramework.xml
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\bin\EntityFramework.SqlServer.xml
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.xml
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.Security.xml
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\obj\Debug\HostelManagementSystem.csprojResolveAssemblyReference.cache
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\obj\Debug\HostelManagementSystem.dll
+C:\Users\Abdullah Tariq\Desktop\mail - Copy\aaa\HostelManagementSystem\HostelManagementSystem\obj\Debug\HostelManagementSystem.pdb

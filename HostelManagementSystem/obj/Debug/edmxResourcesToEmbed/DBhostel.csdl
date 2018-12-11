@@ -1,0 +1,1175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="HostelSystemModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Alotment">
+    <Key>
+      <PropertyRef Name="AlottmentID" />
+    </Key>
+    <Property Name="AlottmentID" Type="Int32" Nullable="false" />
+    <Property Name="stuID" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="roomID" Type="Int32" />
+    <Property Name="Status" Type="Boolean" />
+    <Property Name="DateOfAllotment" Type="DateTime" Precision="3" />
+    <Property Name="DateOfClearance" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Room" Relationship="Self.FK__Alotment__roomID__2D27B809" FromRole="Alotment" ToRole="Room" />
+    <NavigationProperty Name="Room1" Relationship="Self.FK__Alotment__roomID__4BAC3F29" FromRole="Alotment" ToRole="Room" />
+    <NavigationProperty Name="Room2" Relationship="Self.FK__Alotment__roomID__6A30C649" FromRole="Alotment" ToRole="Room" />
+    <NavigationProperty Name="Student" Relationship="Self.FK__Alotment__stuID__2E1BDC42" FromRole="Alotment" ToRole="Student" />
+    <NavigationProperty Name="Student1" Relationship="Self.FK__Alotment__stuID__4CA06362" FromRole="Alotment" ToRole="Student" />
+    <NavigationProperty Name="Student2" Relationship="Self.FK__Alotment__stuID__6B24EA82" FromRole="Alotment" ToRole="Student" />
+  </EntityType>
+  <EntityType Name="BloodGroup">
+    <Key>
+      <PropertyRef Name="BloodGroupID" />
+    </Key>
+    <Property Name="BloodGroupID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Students" Relationship="Self.FK__Student__BGid__38996AB5" FromRole="BloodGroup" ToRole="Student" />
+    <NavigationProperty Name="Students1" Relationship="Self.FK__Student__BGid__571DF1D5" FromRole="BloodGroup" ToRole="Student" />
+    <NavigationProperty Name="Students2" Relationship="Self.FK__Student__BGid__75A278F5" FromRole="BloodGroup" ToRole="Student" />
+    <NavigationProperty Name="AspNetUsers" Relationship="HostelSystemModel.FK_Bloodgroupid" FromRole="BloodGroup" ToRole="AspNetUser" />
+  </EntityType>
+  <EntityType Name="Campu">
+    <Key>
+      <PropertyRef Name="CampusID" />
+    </Key>
+    <Property Name="CampusID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Departments" Relationship="Self.FK__Departments__Cid__300424B4" FromRole="Campus" ToRole="Departments" />
+    <NavigationProperty Name="Departments1" Relationship="Self.FK__Departments__Cid__4E88ABD4" FromRole="Campus" ToRole="Departments" />
+    <NavigationProperty Name="Departments2" Relationship="Self.FK__Departments__Cid__6D0D32F4" FromRole="Campus" ToRole="Departments" />
+  </EntityType>
+  <EntityType Name="City">
+    <Key>
+      <PropertyRef Name="CityID" />
+    </Key>
+    <Property Name="CityID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Countryid" Type="Int32" />
+    <NavigationProperty Name="Country" Relationship="Self.FK__City__Countryid__2F10007B" FromRole="City" ToRole="Country" />
+    <NavigationProperty Name="Country1" Relationship="Self.FK__City__Countryid__4D94879B" FromRole="City" ToRole="Country" />
+    <NavigationProperty Name="Country2" Relationship="Self.FK__City__Countryid__6C190EBB" FromRole="City" ToRole="Country" />
+    <NavigationProperty Name="EMPLOYEEs" Relationship="Self.FK__EMPLOYEE__cityID__30F848ED" FromRole="City" ToRole="EMPLOYEE" />
+    <NavigationProperty Name="EMPLOYEEs1" Relationship="Self.FK__EMPLOYEE__cityID__4F7CD00D" FromRole="City" ToRole="EMPLOYEE" />
+    <NavigationProperty Name="EMPLOYEEs2" Relationship="Self.FK__EMPLOYEE__cityID__6E01572D" FromRole="City" ToRole="EMPLOYEE" />
+    <NavigationProperty Name="Students" Relationship="Self.FK__Student__Cityid__398D8EEE" FromRole="City" ToRole="Student" />
+    <NavigationProperty Name="Students1" Relationship="Self.FK__Student__Cityid__5812160E" FromRole="City" ToRole="Student" />
+    <NavigationProperty Name="Students2" Relationship="Self.FK__Student__Cityid__76969D2E" FromRole="City" ToRole="Student" />
+    <NavigationProperty Name="AspNetUsers" Relationship="HostelSystemModel.FK_CityID" FromRole="City" ToRole="AspNetUser" />
+  </EntityType>
+  <EntityType Name="Country">
+    <Key>
+      <PropertyRef Name="CountryID" />
+    </Key>
+    <Property Name="CountryID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Cities" Relationship="Self.FK__City__Countryid__2F10007B" FromRole="Country" ToRole="City" />
+    <NavigationProperty Name="Cities1" Relationship="Self.FK__City__Countryid__4D94879B" FromRole="Country" ToRole="City" />
+    <NavigationProperty Name="Cities2" Relationship="Self.FK__City__Countryid__6C190EBB" FromRole="Country" ToRole="City" />
+  </EntityType>
+  <EntityType Name="Department">
+    <Key>
+      <PropertyRef Name="DepartmentsID" />
+    </Key>
+    <Property Name="DepartmentsID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Cid" Type="Int32" />
+    <NavigationProperty Name="Campu" Relationship="Self.FK__Departments__Cid__300424B4" FromRole="Departments" ToRole="Campus" />
+    <NavigationProperty Name="Campu1" Relationship="Self.FK__Departments__Cid__4E88ABD4" FromRole="Departments" ToRole="Campus" />
+    <NavigationProperty Name="Campu2" Relationship="Self.FK__Departments__Cid__6D0D32F4" FromRole="Departments" ToRole="Campus" />
+    <NavigationProperty Name="Students" Relationship="Self.FK__Student__Deptid__3A81B327" FromRole="Departments" ToRole="Student" />
+    <NavigationProperty Name="Students1" Relationship="Self.FK__Student__Deptid__59063A47" FromRole="Departments" ToRole="Student" />
+    <NavigationProperty Name="Students2" Relationship="Self.FK__Student__Deptid__778AC167" FromRole="Departments" ToRole="Student" />
+  </EntityType>
+  <EntityType Name="EMPLOYEE">
+    <Key>
+      <PropertyRef Name="CNIC" />
+    </Key>
+    <Property Name="CNIC" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="loginID" Type="Int32" />
+    <Property Name="Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DateOfBirth" Type="DateTime" Precision="3" />
+    <Property Name="cityID" Type="Int32" />
+    <Property Name="contactNo" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="City" Relationship="Self.FK__EMPLOYEE__cityID__30F848ED" FromRole="EMPLOYEE" ToRole="City" />
+    <NavigationProperty Name="City1" Relationship="Self.FK__EMPLOYEE__cityID__4F7CD00D" FromRole="EMPLOYEE" ToRole="City" />
+    <NavigationProperty Name="City2" Relationship="Self.FK__EMPLOYEE__cityID__6E01572D" FromRole="EMPLOYEE" ToRole="City" />
+    <NavigationProperty Name="Login" Relationship="Self.FK__EMPLOYEE__loginI__31EC6D26" FromRole="EMPLOYEE" ToRole="Login" />
+    <NavigationProperty Name="Login1" Relationship="Self.FK__EMPLOYEE__loginI__5070F446" FromRole="EMPLOYEE" ToRole="Login" />
+    <NavigationProperty Name="Login2" Relationship="Self.FK__EMPLOYEE__loginI__6EF57B66" FromRole="EMPLOYEE" ToRole="Login" />
+  </EntityType>
+  <EntityType Name="Feature">
+    <Key>
+      <PropertyRef Name="FeaturesID" />
+    </Key>
+    <Property Name="FeaturesID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="HostelFeatures" Relationship="Self.FK__HostelFeatu__Fid__33D4B598" FromRole="Features" ToRole="HostelFeatures" />
+    <NavigationProperty Name="HostelFeatures1" Relationship="Self.FK__HostelFeatu__Fid__52593CB8" FromRole="Features" ToRole="HostelFeatures" />
+    <NavigationProperty Name="HostelFeatures2" Relationship="Self.FK__HostelFeatu__Fid__70DDC3D8" FromRole="Features" ToRole="HostelFeatures" />
+  </EntityType>
+  <EntityType Name="Hostel">
+    <Key>
+      <PropertyRef Name="HostelID" />
+    </Key>
+    <Property Name="HostelID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="HostelFeatures" Relationship="Self.FK__HostelFeatu__Hid__32E0915F" FromRole="Hostel" ToRole="HostelFeatures" />
+    <NavigationProperty Name="HostelFeatures1" Relationship="Self.FK__HostelFeatu__Hid__5165187F" FromRole="Hostel" ToRole="HostelFeatures" />
+    <NavigationProperty Name="HostelFeatures2" Relationship="Self.FK__HostelFeatu__Hid__6FE99F9F" FromRole="Hostel" ToRole="HostelFeatures" />
+    <NavigationProperty Name="HostelResidents" Relationship="Self.FK__HostelResid__Hid__34C8D9D1" FromRole="Hostel" ToRole="HostelResident" />
+    <NavigationProperty Name="HostelResidents1" Relationship="Self.FK__HostelResid__Hid__534D60F1" FromRole="Hostel" ToRole="HostelResident" />
+    <NavigationProperty Name="HostelResidents2" Relationship="Self.FK__HostelResid__Hid__71D1E811" FromRole="Hostel" ToRole="HostelResident" />
+    <NavigationProperty Name="Rooms" Relationship="Self.FK__Room__Hostelid__36B12243" FromRole="Hostel" ToRole="Room" />
+    <NavigationProperty Name="Rooms1" Relationship="Self.FK__Room__Hostelid__5535A963" FromRole="Hostel" ToRole="Room" />
+    <NavigationProperty Name="Rooms2" Relationship="Self.FK__Room__Hostelid__73BA3083" FromRole="Hostel" ToRole="Room" />
+  </EntityType>
+  <EntityType Name="HostelFeature">
+    <Key>
+      <PropertyRef Name="HFID" />
+    </Key>
+    <Property Name="HFID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Hid" Type="Int32" />
+    <Property Name="Fid" Type="Int32" />
+    <NavigationProperty Name="Feature" Relationship="Self.FK__HostelFeatu__Fid__33D4B598" FromRole="HostelFeatures" ToRole="Features" />
+    <NavigationProperty Name="Feature1" Relationship="Self.FK__HostelFeatu__Fid__52593CB8" FromRole="HostelFeatures" ToRole="Features" />
+    <NavigationProperty Name="Feature2" Relationship="Self.FK__HostelFeatu__Fid__70DDC3D8" FromRole="HostelFeatures" ToRole="Features" />
+    <NavigationProperty Name="Hostel" Relationship="Self.FK__HostelFeatu__Hid__32E0915F" FromRole="HostelFeatures" ToRole="Hostel" />
+    <NavigationProperty Name="Hostel1" Relationship="Self.FK__HostelFeatu__Hid__5165187F" FromRole="HostelFeatures" ToRole="Hostel" />
+    <NavigationProperty Name="Hostel2" Relationship="Self.FK__HostelFeatu__Hid__6FE99F9F" FromRole="HostelFeatures" ToRole="Hostel" />
+  </EntityType>
+  <EntityType Name="HostelResident">
+    <Key>
+      <PropertyRef Name="HRID" />
+    </Key>
+    <Property Name="HRID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Hid" Type="Int32" />
+    <Property Name="Rid" Type="Int32" />
+    <NavigationProperty Name="Hostel" Relationship="Self.FK__HostelResid__Hid__34C8D9D1" FromRole="HostelResident" ToRole="Hostel" />
+    <NavigationProperty Name="Hostel1" Relationship="Self.FK__HostelResid__Hid__534D60F1" FromRole="HostelResident" ToRole="Hostel" />
+    <NavigationProperty Name="Hostel2" Relationship="Self.FK__HostelResid__Hid__71D1E811" FromRole="HostelResident" ToRole="Hostel" />
+    <NavigationProperty Name="Resident" Relationship="Self.FK__HostelResid__Rid__35BCFE0A" FromRole="HostelResident" ToRole="Residents" />
+    <NavigationProperty Name="Resident1" Relationship="Self.FK__HostelResid__Rid__5441852A" FromRole="HostelResident" ToRole="Residents" />
+    <NavigationProperty Name="Resident2" Relationship="Self.FK__HostelResid__Rid__72C60C4A" FromRole="HostelResident" ToRole="Residents" />
+  </EntityType>
+  <EntityType Name="Login">
+    <Key>
+      <PropertyRef Name="loginID" />
+    </Key>
+    <Property Name="loginID" Type="Int32" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Status" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="EMPLOYEEs" Relationship="Self.FK__EMPLOYEE__loginI__31EC6D26" FromRole="Login" ToRole="EMPLOYEE" />
+    <NavigationProperty Name="EMPLOYEEs1" Relationship="Self.FK__EMPLOYEE__loginI__5070F446" FromRole="Login" ToRole="EMPLOYEE" />
+    <NavigationProperty Name="EMPLOYEEs2" Relationship="Self.FK__EMPLOYEE__loginI__6EF57B66" FromRole="Login" ToRole="EMPLOYEE" />
+    <NavigationProperty Name="Students" Relationship="Self.FK__Student__loginID__3B75D760" FromRole="Login" ToRole="Student" />
+    <NavigationProperty Name="Students1" Relationship="Self.FK__Student__loginID__59FA5E80" FromRole="Login" ToRole="Student" />
+    <NavigationProperty Name="Students2" Relationship="Self.FK__Student__loginID__787EE5A0" FromRole="Login" ToRole="Student" />
+  </EntityType>
+  <EntityType Name="Resident">
+    <Key>
+      <PropertyRef Name="ResidentsID" />
+    </Key>
+    <Property Name="ResidentsID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="HostelResidents" Relationship="Self.FK__HostelResid__Rid__35BCFE0A" FromRole="Residents" ToRole="HostelResident" />
+    <NavigationProperty Name="HostelResidents1" Relationship="Self.FK__HostelResid__Rid__5441852A" FromRole="Residents" ToRole="HostelResident" />
+    <NavigationProperty Name="HostelResidents2" Relationship="Self.FK__HostelResid__Rid__72C60C4A" FromRole="Residents" ToRole="HostelResident" />
+  </EntityType>
+  <EntityType Name="Room">
+    <Key>
+      <PropertyRef Name="RoomID" />
+    </Key>
+    <Property Name="RoomID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RoomTypeid" Type="Int32" />
+    <Property Name="Hostelid" Type="Int32" />
+    <NavigationProperty Name="Alotments" Relationship="Self.FK__Alotment__roomID__2D27B809" FromRole="Room" ToRole="Alotment" />
+    <NavigationProperty Name="Alotments1" Relationship="Self.FK__Alotment__roomID__4BAC3F29" FromRole="Room" ToRole="Alotment" />
+    <NavigationProperty Name="Alotments2" Relationship="Self.FK__Alotment__roomID__6A30C649" FromRole="Room" ToRole="Alotment" />
+    <NavigationProperty Name="Hostel" Relationship="Self.FK__Room__Hostelid__36B12243" FromRole="Room" ToRole="Hostel" />
+    <NavigationProperty Name="Hostel1" Relationship="Self.FK__Room__Hostelid__5535A963" FromRole="Room" ToRole="Hostel" />
+    <NavigationProperty Name="Hostel2" Relationship="Self.FK__Room__Hostelid__73BA3083" FromRole="Room" ToRole="Hostel" />
+    <NavigationProperty Name="RoomType" Relationship="Self.FK__Room__RoomTypeid__37A5467C" FromRole="Room" ToRole="RoomType" />
+    <NavigationProperty Name="RoomType1" Relationship="Self.FK__Room__RoomTypeid__5629CD9C" FromRole="Room" ToRole="RoomType" />
+    <NavigationProperty Name="RoomType2" Relationship="Self.FK__Room__RoomTypeid__74AE54BC" FromRole="Room" ToRole="RoomType" />
+    <Property Name="TotalRooms" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="RoomType">
+    <Key>
+      <PropertyRef Name="RoomTypeID" />
+    </Key>
+    <Property Name="RoomTypeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RoomType1" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Rooms" Relationship="Self.FK__Room__RoomTypeid__37A5467C" FromRole="RoomType" ToRole="Room" />
+    <NavigationProperty Name="Rooms1" Relationship="Self.FK__Room__RoomTypeid__5629CD9C" FromRole="RoomType" ToRole="Room" />
+    <NavigationProperty Name="Rooms2" Relationship="Self.FK__Room__RoomTypeid__74AE54BC" FromRole="RoomType" ToRole="Room" />
+  </EntityType>
+  <EntityType Name="Student">
+    <Key>
+      <PropertyRef Name="CNIC" />
+    </Key>
+    <Property Name="CNIC" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DateOFBirth" Type="DateTime" Precision="3" />
+    <Property Name="ContactNo" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="BGid" Type="Int32" />
+    <Property Name="Cityid" Type="Int32" />
+    <Property Name="CGPA" Type="Double" />
+    <Property Name="Session" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="Deptid" Type="Int32" />
+    <Property Name="loginID" Type="Int32" />
+    <NavigationProperty Name="Alotments" Relationship="Self.FK__Alotment__stuID__2E1BDC42" FromRole="Student" ToRole="Alotment" />
+    <NavigationProperty Name="Alotments1" Relationship="Self.FK__Alotment__stuID__4CA06362" FromRole="Student" ToRole="Alotment" />
+    <NavigationProperty Name="Alotments2" Relationship="Self.FK__Alotment__stuID__6B24EA82" FromRole="Student" ToRole="Alotment" />
+    <NavigationProperty Name="BloodGroup" Relationship="Self.FK__Student__BGid__38996AB5" FromRole="Student" ToRole="BloodGroup" />
+    <NavigationProperty Name="BloodGroup1" Relationship="Self.FK__Student__BGid__571DF1D5" FromRole="Student" ToRole="BloodGroup" />
+    <NavigationProperty Name="BloodGroup2" Relationship="Self.FK__Student__BGid__75A278F5" FromRole="Student" ToRole="BloodGroup" />
+    <NavigationProperty Name="City" Relationship="Self.FK__Student__Cityid__398D8EEE" FromRole="Student" ToRole="City" />
+    <NavigationProperty Name="City1" Relationship="Self.FK__Student__Cityid__5812160E" FromRole="Student" ToRole="City" />
+    <NavigationProperty Name="City2" Relationship="Self.FK__Student__Cityid__76969D2E" FromRole="Student" ToRole="City" />
+    <NavigationProperty Name="Department" Relationship="Self.FK__Student__Deptid__3A81B327" FromRole="Student" ToRole="Departments" />
+    <NavigationProperty Name="Department1" Relationship="Self.FK__Student__Deptid__59063A47" FromRole="Student" ToRole="Departments" />
+    <NavigationProperty Name="Department2" Relationship="Self.FK__Student__Deptid__778AC167" FromRole="Student" ToRole="Departments" />
+    <NavigationProperty Name="Login" Relationship="Self.FK__Student__loginID__3B75D760" FromRole="Student" ToRole="Login" />
+    <NavigationProperty Name="Login1" Relationship="Self.FK__Student__loginID__59FA5E80" FromRole="Student" ToRole="Login" />
+    <NavigationProperty Name="Login2" Relationship="Self.FK__Student__loginID__787EE5A0" FromRole="Student" ToRole="Login" />
+  </EntityType>
+  <Association Name="FK__Alotment__roomID__2D27B809">
+    <End Role="Room" Type="Self.Room" Multiplicity="0..1" />
+    <End Role="Alotment" Type="Self.Alotment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Room">
+        <PropertyRef Name="RoomID" />
+      </Principal>
+      <Dependent Role="Alotment">
+        <PropertyRef Name="roomID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Alotment__roomID__4BAC3F29">
+    <End Role="Room" Type="Self.Room" Multiplicity="0..1" />
+    <End Role="Alotment" Type="Self.Alotment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Room">
+        <PropertyRef Name="RoomID" />
+      </Principal>
+      <Dependent Role="Alotment">
+        <PropertyRef Name="roomID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Alotment__roomID__6A30C649">
+    <End Role="Room" Type="Self.Room" Multiplicity="0..1" />
+    <End Role="Alotment" Type="Self.Alotment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Room">
+        <PropertyRef Name="RoomID" />
+      </Principal>
+      <Dependent Role="Alotment">
+        <PropertyRef Name="roomID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Alotment__stuID__2E1BDC42">
+    <End Role="Student" Type="Self.Student" Multiplicity="0..1" />
+    <End Role="Alotment" Type="Self.Alotment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Student">
+        <PropertyRef Name="CNIC" />
+      </Principal>
+      <Dependent Role="Alotment">
+        <PropertyRef Name="stuID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Alotment__stuID__4CA06362">
+    <End Role="Student" Type="Self.Student" Multiplicity="0..1" />
+    <End Role="Alotment" Type="Self.Alotment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Student">
+        <PropertyRef Name="CNIC" />
+      </Principal>
+      <Dependent Role="Alotment">
+        <PropertyRef Name="stuID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Alotment__stuID__6B24EA82">
+    <End Role="Student" Type="Self.Student" Multiplicity="0..1" />
+    <End Role="Alotment" Type="Self.Alotment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Student">
+        <PropertyRef Name="CNIC" />
+      </Principal>
+      <Dependent Role="Alotment">
+        <PropertyRef Name="stuID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Student__BGid__38996AB5">
+    <End Role="BloodGroup" Type="Self.BloodGroup" Multiplicity="0..1" />
+    <End Role="Student" Type="Self.Student" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BloodGroup">
+        <PropertyRef Name="BloodGroupID" />
+      </Principal>
+      <Dependent Role="Student">
+        <PropertyRef Name="BGid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Student__BGid__571DF1D5">
+    <End Role="BloodGroup" Type="Self.BloodGroup" Multiplicity="0..1" />
+    <End Role="Student" Type="Self.Student" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BloodGroup">
+        <PropertyRef Name="BloodGroupID" />
+      </Principal>
+      <Dependent Role="Student">
+        <PropertyRef Name="BGid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Student__BGid__75A278F5">
+    <End Role="BloodGroup" Type="Self.BloodGroup" Multiplicity="0..1" />
+    <End Role="Student" Type="Self.Student" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BloodGroup">
+        <PropertyRef Name="BloodGroupID" />
+      </Principal>
+      <Dependent Role="Student">
+        <PropertyRef Name="BGid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Departments__Cid__300424B4">
+    <End Role="Campus" Type="Self.Campu" Multiplicity="0..1" />
+    <End Role="Departments" Type="Self.Department" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Campus">
+        <PropertyRef Name="CampusID" />
+      </Principal>
+      <Dependent Role="Departments">
+        <PropertyRef Name="Cid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Departments__Cid__4E88ABD4">
+    <End Role="Campus" Type="Self.Campu" Multiplicity="0..1" />
+    <End Role="Departments" Type="Self.Department" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Campus">
+        <PropertyRef Name="CampusID" />
+      </Principal>
+      <Dependent Role="Departments">
+        <PropertyRef Name="Cid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Departments__Cid__6D0D32F4">
+    <End Role="Campus" Type="Self.Campu" Multiplicity="0..1" />
+    <End Role="Departments" Type="Self.Department" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Campus">
+        <PropertyRef Name="CampusID" />
+      </Principal>
+      <Dependent Role="Departments">
+        <PropertyRef Name="Cid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__City__Countryid__2F10007B">
+    <End Role="Country" Type="Self.Country" Multiplicity="0..1" />
+    <End Role="City" Type="Self.City" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Country">
+        <PropertyRef Name="CountryID" />
+      </Principal>
+      <Dependent Role="City">
+        <PropertyRef Name="Countryid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__City__Countryid__4D94879B">
+    <End Role="Country" Type="Self.Country" Multiplicity="0..1" />
+    <End Role="City" Type="Self.City" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Country">
+        <PropertyRef Name="CountryID" />
+      </Principal>
+      <Dependent Role="City">
+        <PropertyRef Name="Countryid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__City__Countryid__6C190EBB">
+    <End Role="Country" Type="Self.Country" Multiplicity="0..1" />
+    <End Role="City" Type="Self.City" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Country">
+        <PropertyRef Name="CountryID" />
+      </Principal>
+      <Dependent Role="City">
+        <PropertyRef Name="Countryid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__EMPLOYEE__cityID__30F848ED">
+    <End Role="City" Type="Self.City" Multiplicity="0..1" />
+    <End Role="EMPLOYEE" Type="Self.EMPLOYEE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="City">
+        <PropertyRef Name="CityID" />
+      </Principal>
+      <Dependent Role="EMPLOYEE">
+        <PropertyRef Name="cityID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__EMPLOYEE__cityID__4F7CD00D">
+    <End Role="City" Type="Self.City" Multiplicity="0..1" />
+    <End Role="EMPLOYEE" Type="Self.EMPLOYEE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="City">
+        <PropertyRef Name="CityID" />
+      </Principal>
+      <Dependent Role="EMPLOYEE">
+        <PropertyRef Name="cityID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__EMPLOYEE__cityID__6E01572D">
+    <End Role="City" Type="Self.City" Multiplicity="0..1" />
+    <End Role="EMPLOYEE" Type="Self.EMPLOYEE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="City">
+        <PropertyRef Name="CityID" />
+      </Principal>
+      <Dependent Role="EMPLOYEE">
+        <PropertyRef Name="cityID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Student__Cityid__398D8EEE">
+    <End Role="City" Type="Self.City" Multiplicity="0..1" />
+    <End Role="Student" Type="Self.Student" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="City">
+        <PropertyRef Name="CityID" />
+      </Principal>
+      <Dependent Role="Student">
+        <PropertyRef Name="Cityid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Student__Cityid__5812160E">
+    <End Role="City" Type="Self.City" Multiplicity="0..1" />
+    <End Role="Student" Type="Self.Student" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="City">
+        <PropertyRef Name="CityID" />
+      </Principal>
+      <Dependent Role="Student">
+        <PropertyRef Name="Cityid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Student__Cityid__76969D2E">
+    <End Role="City" Type="Self.City" Multiplicity="0..1" />
+    <End Role="Student" Type="Self.Student" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="City">
+        <PropertyRef Name="CityID" />
+      </Principal>
+      <Dependent Role="Student">
+        <PropertyRef Name="Cityid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Student__Deptid__3A81B327">
+    <End Role="Departments" Type="Self.Department" Multiplicity="0..1" />
+    <End Role="Student" Type="Self.Student" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Departments">
+        <PropertyRef Name="DepartmentsID" />
+      </Principal>
+      <Dependent Role="Student">
+        <PropertyRef Name="Deptid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Student__Deptid__59063A47">
+    <End Role="Departments" Type="Self.Department" Multiplicity="0..1" />
+    <End Role="Student" Type="Self.Student" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Departments">
+        <PropertyRef Name="DepartmentsID" />
+      </Principal>
+      <Dependent Role="Student">
+        <PropertyRef Name="Deptid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Student__Deptid__778AC167">
+    <End Role="Departments" Type="Self.Department" Multiplicity="0..1" />
+    <End Role="Student" Type="Self.Student" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Departments">
+        <PropertyRef Name="DepartmentsID" />
+      </Principal>
+      <Dependent Role="Student">
+        <PropertyRef Name="Deptid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__EMPLOYEE__loginI__31EC6D26">
+    <End Role="Login" Type="Self.Login" Multiplicity="0..1" />
+    <End Role="EMPLOYEE" Type="Self.EMPLOYEE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Login">
+        <PropertyRef Name="loginID" />
+      </Principal>
+      <Dependent Role="EMPLOYEE">
+        <PropertyRef Name="loginID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__EMPLOYEE__loginI__5070F446">
+    <End Role="Login" Type="Self.Login" Multiplicity="0..1" />
+    <End Role="EMPLOYEE" Type="Self.EMPLOYEE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Login">
+        <PropertyRef Name="loginID" />
+      </Principal>
+      <Dependent Role="EMPLOYEE">
+        <PropertyRef Name="loginID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__EMPLOYEE__loginI__6EF57B66">
+    <End Role="Login" Type="Self.Login" Multiplicity="0..1" />
+    <End Role="EMPLOYEE" Type="Self.EMPLOYEE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Login">
+        <PropertyRef Name="loginID" />
+      </Principal>
+      <Dependent Role="EMPLOYEE">
+        <PropertyRef Name="loginID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__HostelFeatu__Fid__33D4B598">
+    <End Role="Features" Type="Self.Feature" Multiplicity="0..1" />
+    <End Role="HostelFeatures" Type="Self.HostelFeature" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Features">
+        <PropertyRef Name="FeaturesID" />
+      </Principal>
+      <Dependent Role="HostelFeatures">
+        <PropertyRef Name="Fid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__HostelFeatu__Fid__52593CB8">
+    <End Role="Features" Type="Self.Feature" Multiplicity="0..1" />
+    <End Role="HostelFeatures" Type="Self.HostelFeature" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Features">
+        <PropertyRef Name="FeaturesID" />
+      </Principal>
+      <Dependent Role="HostelFeatures">
+        <PropertyRef Name="Fid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__HostelFeatu__Fid__70DDC3D8">
+    <End Role="Features" Type="Self.Feature" Multiplicity="0..1" />
+    <End Role="HostelFeatures" Type="Self.HostelFeature" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Features">
+        <PropertyRef Name="FeaturesID" />
+      </Principal>
+      <Dependent Role="HostelFeatures">
+        <PropertyRef Name="Fid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__HostelFeatu__Hid__32E0915F">
+    <End Role="Hostel" Type="Self.Hostel" Multiplicity="0..1" />
+    <End Role="HostelFeatures" Type="Self.HostelFeature" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Hostel">
+        <PropertyRef Name="HostelID" />
+      </Principal>
+      <Dependent Role="HostelFeatures">
+        <PropertyRef Name="Hid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__HostelFeatu__Hid__5165187F">
+    <End Role="Hostel" Type="Self.Hostel" Multiplicity="0..1" />
+    <End Role="HostelFeatures" Type="Self.HostelFeature" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Hostel">
+        <PropertyRef Name="HostelID" />
+      </Principal>
+      <Dependent Role="HostelFeatures">
+        <PropertyRef Name="Hid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__HostelFeatu__Hid__6FE99F9F">
+    <End Role="Hostel" Type="Self.Hostel" Multiplicity="0..1" />
+    <End Role="HostelFeatures" Type="Self.HostelFeature" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Hostel">
+        <PropertyRef Name="HostelID" />
+      </Principal>
+      <Dependent Role="HostelFeatures">
+        <PropertyRef Name="Hid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__HostelResid__Hid__34C8D9D1">
+    <End Role="Hostel" Type="Self.Hostel" Multiplicity="0..1" />
+    <End Role="HostelResident" Type="Self.HostelResident" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Hostel">
+        <PropertyRef Name="HostelID" />
+      </Principal>
+      <Dependent Role="HostelResident">
+        <PropertyRef Name="Hid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__HostelResid__Hid__534D60F1">
+    <End Role="Hostel" Type="Self.Hostel" Multiplicity="0..1" />
+    <End Role="HostelResident" Type="Self.HostelResident" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Hostel">
+        <PropertyRef Name="HostelID" />
+      </Principal>
+      <Dependent Role="HostelResident">
+        <PropertyRef Name="Hid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__HostelResid__Hid__71D1E811">
+    <End Role="Hostel" Type="Self.Hostel" Multiplicity="0..1" />
+    <End Role="HostelResident" Type="Self.HostelResident" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Hostel">
+        <PropertyRef Name="HostelID" />
+      </Principal>
+      <Dependent Role="HostelResident">
+        <PropertyRef Name="Hid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Room__Hostelid__36B12243">
+    <End Role="Hostel" Type="Self.Hostel" Multiplicity="0..1" />
+    <End Role="Room" Type="Self.Room" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Hostel">
+        <PropertyRef Name="HostelID" />
+      </Principal>
+      <Dependent Role="Room">
+        <PropertyRef Name="Hostelid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Room__Hostelid__5535A963">
+    <End Role="Hostel" Type="Self.Hostel" Multiplicity="0..1" />
+    <End Role="Room" Type="Self.Room" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Hostel">
+        <PropertyRef Name="HostelID" />
+      </Principal>
+      <Dependent Role="Room">
+        <PropertyRef Name="Hostelid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Room__Hostelid__73BA3083">
+    <End Role="Hostel" Type="Self.Hostel" Multiplicity="0..1" />
+    <End Role="Room" Type="Self.Room" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Hostel">
+        <PropertyRef Name="HostelID" />
+      </Principal>
+      <Dependent Role="Room">
+        <PropertyRef Name="Hostelid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__HostelResid__Rid__35BCFE0A">
+    <End Role="Residents" Type="Self.Resident" Multiplicity="0..1" />
+    <End Role="HostelResident" Type="Self.HostelResident" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Residents">
+        <PropertyRef Name="ResidentsID" />
+      </Principal>
+      <Dependent Role="HostelResident">
+        <PropertyRef Name="Rid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__HostelResid__Rid__5441852A">
+    <End Role="Residents" Type="Self.Resident" Multiplicity="0..1" />
+    <End Role="HostelResident" Type="Self.HostelResident" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Residents">
+        <PropertyRef Name="ResidentsID" />
+      </Principal>
+      <Dependent Role="HostelResident">
+        <PropertyRef Name="Rid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__HostelResid__Rid__72C60C4A">
+    <End Role="Residents" Type="Self.Resident" Multiplicity="0..1" />
+    <End Role="HostelResident" Type="Self.HostelResident" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Residents">
+        <PropertyRef Name="ResidentsID" />
+      </Principal>
+      <Dependent Role="HostelResident">
+        <PropertyRef Name="Rid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Student__loginID__3B75D760">
+    <End Role="Login" Type="Self.Login" Multiplicity="0..1" />
+    <End Role="Student" Type="Self.Student" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Login">
+        <PropertyRef Name="loginID" />
+      </Principal>
+      <Dependent Role="Student">
+        <PropertyRef Name="loginID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Student__loginID__59FA5E80">
+    <End Role="Login" Type="Self.Login" Multiplicity="0..1" />
+    <End Role="Student" Type="Self.Student" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Login">
+        <PropertyRef Name="loginID" />
+      </Principal>
+      <Dependent Role="Student">
+        <PropertyRef Name="loginID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Student__loginID__787EE5A0">
+    <End Role="Login" Type="Self.Login" Multiplicity="0..1" />
+    <End Role="Student" Type="Self.Student" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Login">
+        <PropertyRef Name="loginID" />
+      </Principal>
+      <Dependent Role="Student">
+        <PropertyRef Name="loginID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Room__RoomTypeid__37A5467C">
+    <End Role="RoomType" Type="Self.RoomType" Multiplicity="0..1" />
+    <End Role="Room" Type="Self.Room" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RoomType">
+        <PropertyRef Name="RoomTypeID" />
+      </Principal>
+      <Dependent Role="Room">
+        <PropertyRef Name="RoomTypeid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Room__RoomTypeid__5629CD9C">
+    <End Role="RoomType" Type="Self.RoomType" Multiplicity="0..1" />
+    <End Role="Room" Type="Self.Room" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RoomType">
+        <PropertyRef Name="RoomTypeID" />
+      </Principal>
+      <Dependent Role="Room">
+        <PropertyRef Name="RoomTypeid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Room__RoomTypeid__74AE54BC">
+    <End Role="RoomType" Type="Self.RoomType" Multiplicity="0..1" />
+    <End Role="Room" Type="Self.Room" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RoomType">
+        <PropertyRef Name="RoomTypeID" />
+      </Principal>
+      <Dependent Role="Room">
+        <PropertyRef Name="RoomTypeid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="HostelSystemEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Alotments" EntityType="Self.Alotment" />
+    <EntitySet Name="BloodGroups" EntityType="Self.BloodGroup" />
+    <EntitySet Name="Campus" EntityType="Self.Campu" />
+    <EntitySet Name="Cities" EntityType="Self.City" />
+    <EntitySet Name="Countries" EntityType="Self.Country" />
+    <EntitySet Name="Departments" EntityType="Self.Department" />
+    <EntitySet Name="EMPLOYEEs" EntityType="Self.EMPLOYEE" />
+    <EntitySet Name="Features" EntityType="Self.Feature" />
+    <EntitySet Name="Hostels" EntityType="Self.Hostel" />
+    <EntitySet Name="HostelFeatures" EntityType="Self.HostelFeature" />
+    <EntitySet Name="HostelResidents" EntityType="Self.HostelResident" />
+    <EntitySet Name="Logins" EntityType="Self.Login" />
+    <EntitySet Name="Residents" EntityType="Self.Resident" />
+    <EntitySet Name="Rooms" EntityType="Self.Room" />
+    <EntitySet Name="RoomTypes" EntityType="Self.RoomType" />
+    <EntitySet Name="Students" EntityType="Self.Student" />
+    <AssociationSet Name="FK__Alotment__roomID__2D27B809" Association="Self.FK__Alotment__roomID__2D27B809">
+      <End Role="Room" EntitySet="Rooms" />
+      <End Role="Alotment" EntitySet="Alotments" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Alotment__roomID__4BAC3F29" Association="Self.FK__Alotment__roomID__4BAC3F29">
+      <End Role="Room" EntitySet="Rooms" />
+      <End Role="Alotment" EntitySet="Alotments" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Alotment__roomID__6A30C649" Association="Self.FK__Alotment__roomID__6A30C649">
+      <End Role="Room" EntitySet="Rooms" />
+      <End Role="Alotment" EntitySet="Alotments" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Alotment__stuID__2E1BDC42" Association="Self.FK__Alotment__stuID__2E1BDC42">
+      <End Role="Student" EntitySet="Students" />
+      <End Role="Alotment" EntitySet="Alotments" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Alotment__stuID__4CA06362" Association="Self.FK__Alotment__stuID__4CA06362">
+      <End Role="Student" EntitySet="Students" />
+      <End Role="Alotment" EntitySet="Alotments" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Alotment__stuID__6B24EA82" Association="Self.FK__Alotment__stuID__6B24EA82">
+      <End Role="Student" EntitySet="Students" />
+      <End Role="Alotment" EntitySet="Alotments" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Student__BGid__38996AB5" Association="Self.FK__Student__BGid__38996AB5">
+      <End Role="BloodGroup" EntitySet="BloodGroups" />
+      <End Role="Student" EntitySet="Students" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Student__BGid__571DF1D5" Association="Self.FK__Student__BGid__571DF1D5">
+      <End Role="BloodGroup" EntitySet="BloodGroups" />
+      <End Role="Student" EntitySet="Students" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Student__BGid__75A278F5" Association="Self.FK__Student__BGid__75A278F5">
+      <End Role="BloodGroup" EntitySet="BloodGroups" />
+      <End Role="Student" EntitySet="Students" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Departments__Cid__300424B4" Association="Self.FK__Departments__Cid__300424B4">
+      <End Role="Campus" EntitySet="Campus" />
+      <End Role="Departments" EntitySet="Departments" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Departments__Cid__4E88ABD4" Association="Self.FK__Departments__Cid__4E88ABD4">
+      <End Role="Campus" EntitySet="Campus" />
+      <End Role="Departments" EntitySet="Departments" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Departments__Cid__6D0D32F4" Association="Self.FK__Departments__Cid__6D0D32F4">
+      <End Role="Campus" EntitySet="Campus" />
+      <End Role="Departments" EntitySet="Departments" />
+    </AssociationSet>
+    <AssociationSet Name="FK__City__Countryid__2F10007B" Association="Self.FK__City__Countryid__2F10007B">
+      <End Role="Country" EntitySet="Countries" />
+      <End Role="City" EntitySet="Cities" />
+    </AssociationSet>
+    <AssociationSet Name="FK__City__Countryid__4D94879B" Association="Self.FK__City__Countryid__4D94879B">
+      <End Role="Country" EntitySet="Countries" />
+      <End Role="City" EntitySet="Cities" />
+    </AssociationSet>
+    <AssociationSet Name="FK__City__Countryid__6C190EBB" Association="Self.FK__City__Countryid__6C190EBB">
+      <End Role="Country" EntitySet="Countries" />
+      <End Role="City" EntitySet="Cities" />
+    </AssociationSet>
+    <AssociationSet Name="FK__EMPLOYEE__cityID__30F848ED" Association="Self.FK__EMPLOYEE__cityID__30F848ED">
+      <End Role="City" EntitySet="Cities" />
+      <End Role="EMPLOYEE" EntitySet="EMPLOYEEs" />
+    </AssociationSet>
+    <AssociationSet Name="FK__EMPLOYEE__cityID__4F7CD00D" Association="Self.FK__EMPLOYEE__cityID__4F7CD00D">
+      <End Role="City" EntitySet="Cities" />
+      <End Role="EMPLOYEE" EntitySet="EMPLOYEEs" />
+    </AssociationSet>
+    <AssociationSet Name="FK__EMPLOYEE__cityID__6E01572D" Association="Self.FK__EMPLOYEE__cityID__6E01572D">
+      <End Role="City" EntitySet="Cities" />
+      <End Role="EMPLOYEE" EntitySet="EMPLOYEEs" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Student__Cityid__398D8EEE" Association="Self.FK__Student__Cityid__398D8EEE">
+      <End Role="City" EntitySet="Cities" />
+      <End Role="Student" EntitySet="Students" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Student__Cityid__5812160E" Association="Self.FK__Student__Cityid__5812160E">
+      <End Role="City" EntitySet="Cities" />
+      <End Role="Student" EntitySet="Students" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Student__Cityid__76969D2E" Association="Self.FK__Student__Cityid__76969D2E">
+      <End Role="City" EntitySet="Cities" />
+      <End Role="Student" EntitySet="Students" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Student__Deptid__3A81B327" Association="Self.FK__Student__Deptid__3A81B327">
+      <End Role="Departments" EntitySet="Departments" />
+      <End Role="Student" EntitySet="Students" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Student__Deptid__59063A47" Association="Self.FK__Student__Deptid__59063A47">
+      <End Role="Departments" EntitySet="Departments" />
+      <End Role="Student" EntitySet="Students" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Student__Deptid__778AC167" Association="Self.FK__Student__Deptid__778AC167">
+      <End Role="Departments" EntitySet="Departments" />
+      <End Role="Student" EntitySet="Students" />
+    </AssociationSet>
+    <AssociationSet Name="FK__EMPLOYEE__loginI__31EC6D26" Association="Self.FK__EMPLOYEE__loginI__31EC6D26">
+      <End Role="Login" EntitySet="Logins" />
+      <End Role="EMPLOYEE" EntitySet="EMPLOYEEs" />
+    </AssociationSet>
+    <AssociationSet Name="FK__EMPLOYEE__loginI__5070F446" Association="Self.FK__EMPLOYEE__loginI__5070F446">
+      <End Role="Login" EntitySet="Logins" />
+      <End Role="EMPLOYEE" EntitySet="EMPLOYEEs" />
+    </AssociationSet>
+    <AssociationSet Name="FK__EMPLOYEE__loginI__6EF57B66" Association="Self.FK__EMPLOYEE__loginI__6EF57B66">
+      <End Role="Login" EntitySet="Logins" />
+      <End Role="EMPLOYEE" EntitySet="EMPLOYEEs" />
+    </AssociationSet>
+    <AssociationSet Name="FK__HostelFeatu__Fid__33D4B598" Association="Self.FK__HostelFeatu__Fid__33D4B598">
+      <End Role="Features" EntitySet="Features" />
+      <End Role="HostelFeatures" EntitySet="HostelFeatures" />
+    </AssociationSet>
+    <AssociationSet Name="FK__HostelFeatu__Fid__52593CB8" Association="Self.FK__HostelFeatu__Fid__52593CB8">
+      <End Role="Features" EntitySet="Features" />
+      <End Role="HostelFeatures" EntitySet="HostelFeatures" />
+    </AssociationSet>
+    <AssociationSet Name="FK__HostelFeatu__Fid__70DDC3D8" Association="Self.FK__HostelFeatu__Fid__70DDC3D8">
+      <End Role="Features" EntitySet="Features" />
+      <End Role="HostelFeatures" EntitySet="HostelFeatures" />
+    </AssociationSet>
+    <AssociationSet Name="FK__HostelFeatu__Hid__32E0915F" Association="Self.FK__HostelFeatu__Hid__32E0915F">
+      <End Role="Hostel" EntitySet="Hostels" />
+      <End Role="HostelFeatures" EntitySet="HostelFeatures" />
+    </AssociationSet>
+    <AssociationSet Name="FK__HostelFeatu__Hid__5165187F" Association="Self.FK__HostelFeatu__Hid__5165187F">
+      <End Role="Hostel" EntitySet="Hostels" />
+      <End Role="HostelFeatures" EntitySet="HostelFeatures" />
+    </AssociationSet>
+    <AssociationSet Name="FK__HostelFeatu__Hid__6FE99F9F" Association="Self.FK__HostelFeatu__Hid__6FE99F9F">
+      <End Role="Hostel" EntitySet="Hostels" />
+      <End Role="HostelFeatures" EntitySet="HostelFeatures" />
+    </AssociationSet>
+    <AssociationSet Name="FK__HostelResid__Hid__34C8D9D1" Association="Self.FK__HostelResid__Hid__34C8D9D1">
+      <End Role="Hostel" EntitySet="Hostels" />
+      <End Role="HostelResident" EntitySet="HostelResidents" />
+    </AssociationSet>
+    <AssociationSet Name="FK__HostelResid__Hid__534D60F1" Association="Self.FK__HostelResid__Hid__534D60F1">
+      <End Role="Hostel" EntitySet="Hostels" />
+      <End Role="HostelResident" EntitySet="HostelResidents" />
+    </AssociationSet>
+    <AssociationSet Name="FK__HostelResid__Hid__71D1E811" Association="Self.FK__HostelResid__Hid__71D1E811">
+      <End Role="Hostel" EntitySet="Hostels" />
+      <End Role="HostelResident" EntitySet="HostelResidents" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Room__Hostelid__36B12243" Association="Self.FK__Room__Hostelid__36B12243">
+      <End Role="Hostel" EntitySet="Hostels" />
+      <End Role="Room" EntitySet="Rooms" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Room__Hostelid__5535A963" Association="Self.FK__Room__Hostelid__5535A963">
+      <End Role="Hostel" EntitySet="Hostels" />
+      <End Role="Room" EntitySet="Rooms" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Room__Hostelid__73BA3083" Association="Self.FK__Room__Hostelid__73BA3083">
+      <End Role="Hostel" EntitySet="Hostels" />
+      <End Role="Room" EntitySet="Rooms" />
+    </AssociationSet>
+    <AssociationSet Name="FK__HostelResid__Rid__35BCFE0A" Association="Self.FK__HostelResid__Rid__35BCFE0A">
+      <End Role="Residents" EntitySet="Residents" />
+      <End Role="HostelResident" EntitySet="HostelResidents" />
+    </AssociationSet>
+    <AssociationSet Name="FK__HostelResid__Rid__5441852A" Association="Self.FK__HostelResid__Rid__5441852A">
+      <End Role="Residents" EntitySet="Residents" />
+      <End Role="HostelResident" EntitySet="HostelResidents" />
+    </AssociationSet>
+    <AssociationSet Name="FK__HostelResid__Rid__72C60C4A" Association="Self.FK__HostelResid__Rid__72C60C4A">
+      <End Role="Residents" EntitySet="Residents" />
+      <End Role="HostelResident" EntitySet="HostelResidents" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Student__loginID__3B75D760" Association="Self.FK__Student__loginID__3B75D760">
+      <End Role="Login" EntitySet="Logins" />
+      <End Role="Student" EntitySet="Students" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Student__loginID__59FA5E80" Association="Self.FK__Student__loginID__59FA5E80">
+      <End Role="Login" EntitySet="Logins" />
+      <End Role="Student" EntitySet="Students" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Student__loginID__787EE5A0" Association="Self.FK__Student__loginID__787EE5A0">
+      <End Role="Login" EntitySet="Logins" />
+      <End Role="Student" EntitySet="Students" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Room__RoomTypeid__37A5467C" Association="Self.FK__Room__RoomTypeid__37A5467C">
+      <End Role="RoomType" EntitySet="RoomTypes" />
+      <End Role="Room" EntitySet="Rooms" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Room__RoomTypeid__5629CD9C" Association="Self.FK__Room__RoomTypeid__5629CD9C">
+      <End Role="RoomType" EntitySet="RoomTypes" />
+      <End Role="Room" EntitySet="Rooms" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Room__RoomTypeid__74AE54BC" Association="Self.FK__Room__RoomTypeid__74AE54BC">
+      <End Role="RoomType" EntitySet="RoomTypes" />
+      <End Role="Room" EntitySet="Rooms" />
+    </AssociationSet>
+    <EntitySet Name="C__MigrationHistory" EntityType="HostelSystemModel.C__MigrationHistory" />
+    <EntitySet Name="AspNetRoles" EntityType="HostelSystemModel.AspNetRole" />
+    <EntitySet Name="AspNetUserClaims" EntityType="HostelSystemModel.AspNetUserClaim" />
+    <EntitySet Name="AspNetUserLogins" EntityType="HostelSystemModel.AspNetUserLogin" />
+    <EntitySet Name="AspNetUsers" EntityType="HostelSystemModel.AspNetUser" />
+    <AssociationSet Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" Association="HostelSystemModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
+      <End Role="AspNetUser" EntitySet="AspNetUsers" />
+      <End Role="AspNetUserClaim" EntitySet="AspNetUserClaims" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" Association="HostelSystemModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId">
+      <End Role="AspNetUser" EntitySet="AspNetUsers" />
+      <End Role="AspNetUserLogin" EntitySet="AspNetUserLogins" />
+    </AssociationSet>
+    <AssociationSet Name="AspNetUserRoles" Association="HostelSystemModel.AspNetUserRoles">
+      <End Role="AspNetRole" EntitySet="AspNetRoles" />
+      <End Role="AspNetUser" EntitySet="AspNetUsers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Bloodgroupid" Association="HostelSystemModel.FK_Bloodgroupid">
+      <End Role="BloodGroup" EntitySet="BloodGroups" />
+      <End Role="AspNetUser" EntitySet="AspNetUsers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CityID" Association="HostelSystemModel.FK_CityID">
+      <End Role="City" EntitySet="Cities" />
+      <End Role="AspNetUser" EntitySet="AspNetUsers" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="C__MigrationHistory">
+    <Key>
+      <PropertyRef Name="MigrationId" />
+      <PropertyRef Name="ContextKey" />
+    </Key>
+    <Property Name="MigrationId" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="ContextKey" Type="String" Nullable="false" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="Model" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+    <Property Name="ProductVersion" Type="String" Nullable="false" MaxLength="32" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="AspNetRole">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AspNetUsers" Relationship="HostelSystemModel.AspNetUserRoles" FromRole="AspNetRole" ToRole="AspNetUser" />
+  </EntityType>
+  <EntityType Name="AspNetUserClaim">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="ClaimType" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ClaimValue" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AspNetUser" Relationship="HostelSystemModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" FromRole="AspNetUserClaim" ToRole="AspNetUser" />
+  </EntityType>
+  <EntityType Name="AspNetUserLogin">
+    <Key>
+      <PropertyRef Name="LoginProvider" />
+      <PropertyRef Name="ProviderKey" />
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="LoginProvider" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="ProviderKey" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="UserId" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AspNetUser" Relationship="HostelSystemModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" FromRole="AspNetUserLogin" ToRole="AspNetUser" />
+  </EntityType>
+  <EntityType Name="AspNetUser">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="EmailConfirmed" Type="Boolean" Nullable="false" />
+    <Property Name="PasswordHash" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="SecurityStamp" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PhoneNumber" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PhoneNumberConfirmed" Type="Boolean" Nullable="false" />
+    <Property Name="TwoFactorEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="LockoutEndDateUtc" Type="DateTime" Precision="3" />
+    <Property Name="LockoutEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="AccessFailedCount" Type="Int32" Nullable="false" />
+    <Property Name="UserName" Type="String" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AspNetUserClaims" Relationship="HostelSystemModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" FromRole="AspNetUser" ToRole="AspNetUserClaim" />
+    <NavigationProperty Name="AspNetUserLogins" Relationship="HostelSystemModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" FromRole="AspNetUser" ToRole="AspNetUserLogin" />
+    <NavigationProperty Name="AspNetRoles" Relationship="HostelSystemModel.AspNetUserRoles" FromRole="AspNetUser" ToRole="AspNetRole" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Date_Of_Birth" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CNIC" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="contact_no" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CGPA" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+    <Property Name="Registeration_No" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="type" Type="Boolean" />
+    <Property Name="CityID" Type="Int32" />
+    <Property Name="BloodGroupID" Type="Int32" />
+    <NavigationProperty Name="BloodGroup" Relationship="HostelSystemModel.FK_Bloodgroupid" FromRole="AspNetUser" ToRole="BloodGroup" />
+    <NavigationProperty Name="City1" Relationship="HostelSystemModel.FK_CityID" FromRole="AspNetUser" ToRole="City" />
+    <Property Name="DepartmentsID" Type="Int32" />
+  </EntityType>
+  <Association Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
+    <End Type="HostelSystemModel.AspNetUser" Role="AspNetUser" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="HostelSystemModel.AspNetUserClaim" Role="AspNetUserClaim" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUser">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserClaim">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId">
+    <End Type="HostelSystemModel.AspNetUser" Role="AspNetUser" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="HostelSystemModel.AspNetUserLogin" Role="AspNetUserLogin" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUser">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserLogin">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="AspNetUserRoles">
+    <End Type="HostelSystemModel.AspNetRole" Role="AspNetRole" Multiplicity="*" />
+    <End Type="HostelSystemModel.AspNetUser" Role="AspNetUser" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_Bloodgroupid">
+    <End Type="HostelSystemModel.BloodGroup" Role="BloodGroup" Multiplicity="0..1" />
+    <End Type="HostelSystemModel.AspNetUser" Role="AspNetUser" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BloodGroup">
+        <PropertyRef Name="BloodGroupID" />
+      </Principal>
+      <Dependent Role="AspNetUser">
+        <PropertyRef Name="BloodGroupID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CityID">
+    <End Type="HostelSystemModel.City" Role="City" Multiplicity="0..1" />
+    <End Type="HostelSystemModel.AspNetUser" Role="AspNetUser" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="City">
+        <PropertyRef Name="CityID" />
+      </Principal>
+      <Dependent Role="AspNetUser">
+        <PropertyRef Name="CityID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

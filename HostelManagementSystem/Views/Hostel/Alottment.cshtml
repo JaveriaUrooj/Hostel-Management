@@ -1,0 +1,266 @@
+﻿
+@{
+    ViewBag.Title = "";
+}
+
+<header class="site-header" style="background-image: url('~/images/hero2.png'); background-color: #f8f9fa">
+    <div class="nav-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-flex flex-wrap justify-content-between align-items-center">
+                    <div class="site-branding d-flex align-items-center">
+                        <a class="d-block" href="index.html" rel="home"></a>
+                    </div><!-- .site-branding -->
+
+                    <nav class="site-navigation d-flex justify-content-end align-items-center">
+                        <ul class="d-flex flex-column flex-lg-row justify-content-lg-end align-items-center">
+                            <li class="current-menu-item"><a href="http://localhost:49330/Home/Index">Home</a></li>
+                            <li><a href="http://localhost:49330/Account/Login">Login</a></li>
+                            <li><a href="#">Sign Up</a></li>
+
+
+
+                        </ul>
+                    </nav><!-- .site-navigation -->
+
+                    <div class="hamburger-menu d-lg-none">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div><!-- .hamburger-menu -->
+                </div><!-- .col -->
+            </div><!-- .row -->
+        </div><!-- .container -->
+    </div><!-- .nav-bar -->
+
+    <div class="swiper-container hero-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide hero-content-wrap" ;>
+                <div class="hero-content-overlay position-absolute w-100 h-100">
+                    <div class="container h-100">
+                        <div class="row h-100">
+                            <div class="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-start">
+                                <header class="entry-header">
+                                    <h1>Allotment</h1>
+                                </header><!-- .entry-header -->
+                                <!-- .entry-content -->
+                                <!-- .entry-footer -->
+                            </div><!-- .col -->
+                        </div><!-- .row -->
+                    </div><!-- .container -->
+                </div><!-- .hero-content-overlay -->
+            </div><!-- .hero-content-wrap -->
+            <!-- .swiper-wrapper -->ss
+            <!-- .pagination-wrap -->
+        </div><!-- .hero-slider -->
+    </div>
+</header><!-- .site-header -->
+
+
+<div class="inputBTN">
+    <a href="http://localhost:49330/Home/Index"><input class="button gradient-bg" type="submit" value="Find a Hostel"></a>
+    <a href="http://localhost:49330/Hostel/AddHostel"><input class="button gradient-bg" type="submit" value="Add a Hostel"></a>
+    <a href="http://localhost:49330/Hostel/Alottment"><input class="button gradient-bg" type="submit" value="Allot a Hostel"></a>
+</div>
+
+<div class="container">
+    <div>
+        <div>
+            <div>
+                <h2 style="text-align: center; padding-top: 10px; margin-bottom: 15px; font-weight: bold;color: #18a3eb;">Hostel Details</h2>
+
+                <div>
+                    <div>
+
+                        <div class="mt-10">
+                            <div class="appointment-box-2" style="margin-left: -1px ; padding-top: 20px;">
+                                <select class="form-control" data-toggle="select" id="CampusID" name="CampusID" style="height:36px;font-size:small; font-style:italic;">
+                                    <option selected="" value="">Select Campus </option>
+                                    @{
+                                        if (ViewBag.Campus != null)
+                                        {
+                                            foreach (var camp in ViewBag.Campus)
+                                            {
+                                                <option value=@camp.CampusID>@camp.Name</option>
+
+                                            }
+
+                                        }
+                                    }
+                                </select>
+
+                                @Html.ValidationMessageFor(m => m.CampusID, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+
+
+
+
+                        <div class="col-12 col-lg-6">
+                            <div style="margin-bottom: 50px; ">
+                                <header class="entry-header d-flex flex-wrap align-items-center">
+
+
+                                    <h3 style="font-weight: bold;">Sessions</h3>
+                                </header>
+
+                                <div class="switch-wrap d-flex justify-content-between">
+                                    <p>01. 2018</p>
+
+                                    <input type="checkbox" id="default-checkbox">
+
+                                </div>
+                                <div class="switch-wrap d-flex justify-content-between">
+                                    <p>02. 2017</p>
+
+                                    <input type="checkbox" id="primary-checkbox">
+
+                                </div>
+                                <div class="switch-wrap d-flex justify-content-between">
+                                    <p>03. 2016</p>
+
+                                    <input type="checkbox" id="confirm-checkbox">
+
+                                </div>
+                                <div class="switch-wrap d-flex justify-content-between">
+                                    <p>04. 2015</p>
+
+                                    <input type="checkbox" id="disabled-checkbox">
+
+                                </div>
+                                <div class="switch-wrap d-flex justify-content-between">
+                                    <p>05. 2014</p>
+
+                                    <input type="checkbox" id="disabled-checkbox-active">
+
+                                </div>
+                            </div>
+
+
+
+
+                            <div style="margin-bottom: 50px; ">
+                                <header class="entry-header d-flex flex-wrap align-items-center">
+
+
+                                    <h3 style="font-weight: bold;">Hostels</h3>
+                                </header>
+
+                                <div class="switch-wrap d-flex justify-content-between">
+                                    <p>01. Khadija Hall</p>
+
+                                    <input type="checkbox" id="default-checkbox">
+
+                                </div>
+                                <div class="switch-wrap d-flex justify-content-between">
+                                    <p>02. Ayesha Hall</p>
+
+                                    <input type="checkbox" id="primary-checkbox">
+
+                                </div>
+                                <div class="switch-wrap d-flex justify-content-between">
+                                    <p>03. Usman Hall</p>
+                                    <input type="checkbox" id="default-checkbox">
+                                </div>
+                                <div class="switch-wrap d-flex justify-content-between">
+                                    <p>04. Zohra Hall</p>
+                                    <input type="checkbox" id="default-checkbox">
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+
+
+                    </div>
+
+
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+    
+<div style="margin:100px;">
+    <div class="single-element-widget mt-30">
+        <h3 class="mb-30" style="font-weight: bold;">Room Details</h3>
+    </div>
+    <table class="table table-bordered">
+        <thead>
+        <th>#</th>
+        <th>No. of Students per Room</th>
+        <th>Room Type</th>
+        <th>Select</th>
+        
+        <tbody>
+            <tr>
+                <td>01</td>
+                <td>...</td>
+                <td>Cubical</td>
+
+                <td><input type="checkbox" id="default-checkbox"></td>
+            </tr>
+            <tr>
+                <td>02</td>
+                <td>...</td
+                <td>Bi-seater</td>
+
+                <td><input type="checkbox" id="default-checkbox"></td>
+            </tr>
+            <tr>
+                <td>03</td>
+                <td>...</td>
+                <td>Tri-seater</td>
+
+                <td><input type="checkbox" id="default-checkbox"></td>
+            </tr>
+            <tr>
+                <td>04</td>
+                <td>...</td>
+                <td>Four-seater</td>
+
+                <td><input type="checkbox" id="default-checkbox"></td>
+            </tr>
+            <tr>
+                <td>05</td>
+                <td>...</td>
+                <td>Five-seater</td>
+
+                <td><input type="checkbox" id="default-checkbox"></td>
+            </tr>
+            <tr>
+                <td>06</td>
+                <td>...</td>
+                <td>Six-seater</td>
+
+                <td><input type="checkbox" id="default-checkbox"></td>
+            </tr>
+            <tr>
+                <td>07</td>
+                <td>...</td>
+                <td>Multi-seater</td>
+
+                <td><input type="checkbox" id="default-checkbox"></td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="w-100 text-center mt-5">
+        <a class="button gradient-bg" href="http://localhost:49330/Hostel/GoToAlottment">Go to Allotments</a>
+    </div>
+
+</div>
+

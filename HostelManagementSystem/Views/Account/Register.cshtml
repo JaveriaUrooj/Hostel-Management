@@ -1,0 +1,262 @@
+﻿@model HostelManagementSystem.Models.RegisterViewModel
+@{
+    ViewBag.Title = "";
+}
+
+<header class="site-header">
+    <div class="nav-bar">
+        
+        <div class="container">
+            
+            <div class="row">
+               
+                <div class="col-12 d-flex flex-wrap justify-content-between align-items-center">
+                    <div class="site-branding d-flex align-items-center">
+                        <a class="d-block" href="~/Home.html" rel="home"></a>
+                        <h1>Register</h1>
+                    </div>
+                    <!-- .site-branding -->
+                    <nav class="site-navigation d-flex justify-content-end align-items-center">
+                        <ul class="d-flex flex-column flex-lg-row justify-content-lg-end align-items-center">
+                            <li class="current-menu-item"><a href="/Home/Index">Home</a></li>
+                            <li><a href="/Account/Login">Login</a></li>
+                            <li><a href="/Account/Register">Sign Up</a></li>
+                        </ul>
+                    </nav>
+                    <!-- .site-navigation -->
+                    <div class="hamburger-menu d-lg-none">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <!-- .hamburger-menu -->
+                </div>
+                <!-- .col -->
+            </div>
+            <!-- .row -->
+        </div>
+        <!-- .container -->
+    </div>
+    <!-- .nav-bar -->
+    <div class="swiper-container hero-slider" style="height:100px">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide hero-content-wrap" style="background-image: url('../images/hero2.png'); background-color: #f8f9fa; height:50px">
+                <div class="hero-content-overlay position-absolute w-100 h-100">
+                    <div class="container h-100">
+                        <div class="row h-100">
+                            <div class="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-start">
+                                <header class="entry-header">
+                                    <h1>Sign Up</h1>
+                                </header>
+                                <!-- .entry-header -->
+                                <!-- .entry-content -->
+                                <!-- .entry-footer -->
+                            </div>
+                            <!-- .col -->
+                        </div>
+                        <!-- .row -->
+                    </div>
+                    <!-- .container -->
+                </div>
+                <!-- .hero-content-overlay -->
+            </div>
+            <!-- .hero-content-wrap -->
+            <!-- .swiper-wrapper -->ss
+            <!-- .pagination-wrap -->
+        </div>
+        <!-- .hero-slider -->
+    </div>
+</header>
+<!-- .site-header -->
+}
+<body>
+    @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+    {
+        @Html.AntiForgeryToken()
+       
+  
+        <div class="faq-stuff">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Personal <br> Information</h2>
+                    </div>
+                    <div class="contact-form">
+                        <div class="container">
+                            <div>
+                                <div class="mt-10">
+                                    @Html.TextBoxFor(m => m.Name, new { @class = "form-control", placeholder = "name" })
+                                    @Html.ValidationMessageFor(m => m.Name, "", new { @class = "text-danger" })
+                                </div>
+                                <div class="mt-10" style="margin-top: 30px; ">
+                                    @Html.TextBoxFor(m => m.CNIC, new { @class = "form-control", placeholder = "CNIC" })
+                                    @Html.ValidationMessageFor(m => m.CNIC, "", new { @class = "text-danger" })
+                                </div>
+                                <div class="mt-10">
+                                    @Html.TextBoxFor(m => m.contact_no, new { @class = "form-control", placeholder = "Contact Number" })
+                                    @Html.ValidationMessageFor(m => m.contact_no, "", new { @class = "text-danger" })
+                                </div>
+                                <div class="mt-10">
+                                </div>
+                                <div class="mt-10">
+                                    <div class="appointment-box-2" style="margin-left: -1px ; padding-top: 20px;">
+                                        <select class="form-control" data-toggle="select" id="type" name="type" style="height:36px;font-size:small; font-style:italic;">
+                                            <option>Select Type</option>
+                                            <option value="False">E</option>
+                                            <option value="True">S</option>
+                                        </select>
+                                        @Html.ValidationMessageFor(m => m.type, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                                <div class="mt-10 " style="margin-top: 30px; font-style:italic">
+                                    @Html.TextBoxFor(m => m.DateOfBirth, new { @class = "form-control", placeholder = "Date Of Birth",type = "date"})
+                                    @Html.ValidationMessageFor(m => m.DateOfBirth, "", new { @class = "text-danger" })
+                                </div>
+                                <div class="mt-10">
+                                    <div class="appointment-box-2" style="margin-left: -1px ; padding-top: 30px;">
+                                        <select class="form-control" data-toggle="select" id="BloodGroupID" name="BloodGroupID" style="height:36px;font-size:small; font-style:italic;">
+                                            <option selected="" value="">Bloodgroup </option>
+                                            @{
+                                                if (ViewBag.bloodgroup != null)
+                                                {
+                                                    foreach (var blood in ViewBag.bloodgroup)
+                                                    {
+                                                        <option value=@blood.BloodGroupID>@blood.Name</option>
+                                                    }
+                                                }
+                                            }
+                                        </select>
+                                        @Html.ValidationMessageFor(m => m.BloodGroupID, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                                <div class="mt-10">
+                                    <div class="appointment-box-2" style="margin-left: -1px ; padding-top: 20px; ">
+                                        <select class="form-control" data-toggle="select" id="CityID" name="CityID" style="height:36px;font-size:small; font-style:italic">
+                                            <option selected="" value="">Select City</option>
+                                            @{
+                                                if (ViewBag.city != null)
+                                                {
+                                                    foreach (var city in ViewBag.city)
+                                                    {
+                                                        <option value="@Convert.ToString(@city.CityID)">@city.Name</option>
+                                                    }
+                                                }
+                                            }
+                                        </select>
+                                        @Html.ValidationMessageFor(m => m.CityID, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                                <!-- col-6 -->
+                                <!-- row -->
+                            </div>
+                        </div>
+                    </div>
+                    <div style="margin-left: 600px; margin-top: -700px;">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h2>Educational Information</h2>
+                                </div>
+                                <div class="contact-form">
+                                    <div class="container">
+                                       
+                                            <div class="mt-10">
+                                                @Html.TextBoxFor(m => m.Registeration_No, new { @class = "form-control", placeholder = "Registeration No." })
+                                                @Html.ValidationMessageFor(m => m.Registeration_No, "", new { @class = "text-danger" })
+                                            </div>
+                                            <div class="mt-10">
+                                                @Html.TextBoxFor(m => m.CGPA, new { @class = "form-control", placeholder = "CGPA" })
+                                                @Html.ValidationMessageFor(m => m.CGPA, "", new { @class = "text-danger" })
+                                            </div>
+                                            
+
+
+                                                <div class="mt-10">
+                                                    <div class="appointment-box-2" style="margin-left: -1px ; padding-top: 20px;">
+                                                        <select class="form-control" data-toggle="select" id="CampusID" name="CampusID" style="height:36px;font-size:small; font-style:italic;">
+                                                            <option selected="" value="">Select Campus </option>
+                                                            @{
+                                                                if (ViewBag.Campus != null)
+                                                                {
+                                                                    foreach (var camp in ViewBag.Campus)
+                                                                    {
+                                                                        <option value=@camp.CampusID>@camp.Name</option>
+
+                                                                    }
+
+                                                                }
+                                                            }
+                                                        </select>
+                                                        
+                                                        @Html.ValidationMessageFor(m => m.CampusID, "", new { @class = "text-danger" })
+                                                    </div>
+                                                </div>
+
+                                                
+
+                                                <div class="mt-10">
+                                                    <div class="appointment-box-2" style="margin-left: -1px ; padding-top: 20px;">
+                                                        <select class="form-control" data-toggle="select" id="DepartmentID" name="DepartmentID" style="height:36px;font-size:small; font-style:italic;">
+                                                            <option selected="" value="">Select Department </option>
+                                                            @{
+                                                                if (ViewBag.Dept != null)
+                                                                {
+                                                                    foreach (var Dept in ViewBag.Dept)
+                                                                    {
+
+                                                                        <option value=@Dept.DepartmentsID>@Dept.Name</option>
+                                                                            
+                                                                        }
+
+                                                                    }
+                                                                }
+                                                        </select>
+                                                        @Html.ValidationMessageFor(m => m.DepartmentID, "", new { @class = "text-danger" })
+                                                    </div>
+                                                   
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- row -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h2>Registration Information</h2>
+                                    </div>
+                                    <div class="contact-form">
+                                        <div class="container">
+                                            <div>
+                                                <div class="mt-10" >
+                                                    @Html.TextBoxFor(m => m.Email, new { @class = "form-control", placeholder = "Email" })
+                                                    @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+                                                </div>
+                                                <div class="mt-10" style="margin-top: 30px; font-style:italic;">
+                                                    @Html.TextBoxFor(m => m.Password, new { @class = "form-control", placeholder = "Password", type="Password" })
+                                                    @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+                                                </div>
+                                                <div class="mt-10" style="margin-top: 30px; font-style:italic; background-color:lavender">
+                                                    @Html.TextBoxFor(m => m.ConfirmPassword, new { @class = "form-control", placeholder = "Confirm Password" ,type="Password" })
+                                                    @Html.ValidationMessageFor(m => m.ConfirmPassword, "", new { @class = "text-danger" })
+                                                </div>
+                                            </div>
+                                            <!-- row -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+               
+                <div class="col-12">
+                    <input type="submit" value="Register" class="button gradient-bg" style="margin-left:90px">
+                </div>
+           </div>
+      }
+</body>
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

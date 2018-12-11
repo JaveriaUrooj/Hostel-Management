@@ -1,0 +1,140 @@
+﻿@using HostelManagementSystem.Models
+@model LoginViewModel
+@{
+    ViewBag.Title = "LOGIN";
+}
+
+<header class="site-header">
+    <div class="nav-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-flex flex-wrap justify-content-between align-items-center">
+                    <div class="site-branding d-flex align-items-center">
+                        <a class="d-block" href="~/Home.html" rel="home"></a>
+                        <h1>Login</h1>
+                    </div><!-- .site-branding -->
+
+                    <nav class="site-navigation d-flex justify-content-end align-items-center">
+                        <ul class="d-flex flex-column flex-lg-row justify-content-lg-end align-items-center">
+                            <li class="current-menu-item"><a href="/Home/Index">Home</a></li>
+                            <li><a href="/Account/Login">Login</a></li>
+                            <li><a href="/Account/Register">Sign Up</a></li>
+
+
+
+                        </ul>
+                    </nav><!-- .site-navigation -->
+
+                    <div class="hamburger-menu d-lg-none">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div><!-- .hamburger-menu -->
+                </div><!-- .col -->
+            </div><!-- .row -->
+        </div><!-- .container -->
+    </div><!-- .nav-bar -->
+
+    <div class="swiper-container hero-slider" style="height:100px">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide hero-content-wrap" style="background-image: url('../images/hero2.png'); background-color: #f8f9fa">
+                <div class="hero-content-overlay position-absolute w-100 h-100">
+                    <div class="container h-100">
+                        <div class="row h-100">
+                            <div class="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-start">
+                                <header class="entry-header" >
+                                    <h1>Login</h1>
+                                </header><!-- .entry-header -->
+                                <!-- .entry-content -->
+                                <!-- .entry-footer -->
+                            </div><!-- .col -->
+                        </div><!-- .row -->
+                    </div><!-- .container -->
+                </div><!-- .hero-content-overlay -->
+            </div><!-- .hero-content-wrap -->
+            <!-- .swiper-wrapper -->ss
+            <!-- .pagination-wrap -->
+        </div><!-- .hero-slider -->
+    </div>
+</header><!-- .site-header -->
+
+<body>
+    @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+    {
+        @Html.AntiForgeryToken()
+
+
+        <div class="faq-stuff">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Enter Information</h2>
+                    </div>
+
+                    <div class="contact-form">
+                        <div class="container">
+                            <div>
+
+
+
+
+
+
+                                <div class="mt-10">
+                                    @Html.TextBoxFor(m => m.Email, new { @class = "from-control", placeholder = "Email" })
+                                    @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+                                </div><!-- col-6 -->
+
+                                <div class="mt-10" style="margin-top: 30px; font-style:italic;">
+                                    @Html.TextBoxFor(m => m.Password, new { @class = "form-control", placeholder = "Password", type = "Password" })
+                                    @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+                                
+                                </div>
+
+
+
+                                 
+                                <div class="mt-10">
+                                    <div class="appointment-box-2" style="margin-left: -1px ; padding-top: 20px;">
+                                        <select class="form-control" data-toggle="select" id="type" name="type" style="height:36px; font-size:small; font-style:italic;">
+                                            <option>Select Type</option>
+                                            <option value="False">E</option>
+                                            <option value="True">S</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+
+
+                                <p>
+                                    <a href="/Account/Register " style="color: white">Register as a new User</a>
+                                </p>
+
+                                <div class="col-12">
+                                    <a href=""><input type="submit" value="Log in" class="button gradient-bg"></a>
+                                </div>
+                                
+
+                                @*Enable this onece you have account confirmation enabled for Password reset functionality
+                                    <p>
+                                    @Html.ActionLink("Forget your Password?", "Forget Password")
+                                    </p>
+                                *@
+                                
+                            </div><!-- row -->
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    }
+    </body>
+
+
+@section Scripts{
+    @Scripts.Render("~/bundles/jqueryval")
+    }
